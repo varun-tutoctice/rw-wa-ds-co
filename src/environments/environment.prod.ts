@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+   production: true, 
+   cdcApiKey: '4_jpzahMO4CBnl9Elopzfr0A'
 };

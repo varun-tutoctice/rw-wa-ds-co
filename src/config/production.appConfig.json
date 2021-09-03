@@ -1,0 +1,17 @@
+{
+  "appConfig": {
+    "default": {
+      "appName": "rewards-component",
+      "appVersion": "1.0.0",
+      "serviceVirtualizationEnabled": true,
+      "gigyaApiKey": "4_jpzahMO4CBnl9Elopzfr0A",
+      "isChinaDomain": false
+    },
+    "china": {
+      "appName": "rewards-component",
+      "appVersion": "1.0.2",
+      "gigyaApiKey": "4_jpzahMO4CBnl9Elopzfr0A",
+      "isChinaDomain": true
+    }
+  }
+}

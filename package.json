@@ -4,9 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "npm run coverage",
+    "coverage": "ng test rewards-component --watch=false --code-coverage",
+    "build": "node build.js",
+    "merge-dist-prod": "node build-element-prod.js",
+    "build:prod": "del-cli src/dist && ng build --configuration production --extra-webpack-config webpack.partial.js && npm run merge-dist-prod",
+    "build:staging": "del-cli src/dist && ng build --configuration staging --extra-webpack-config webpack.partial.js && npm run merge-dist-prod",
+    "build:qap": "del-cli src/dist && ng build --configuration qap --extra-webpack-config webpack.partial.js && npm run merge-dist-prod"
   },
   "private": true,
   "dependencies": {
@@ -14,12 +19,25 @@
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
     "@angular/core": "~12.2.0",
+    "@angular/elements": "^12.2.4",
     "@angular/forms": "~12.2.0",
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@webcomponents/custom-elements": "^1.5.0",
+    "@webcomponents/webcomponentsjs": "^2.6.0",
+    "del-cli": "^4.0.1",
+    "document-register-element": "^1.14.10",
+    "es-cookie": "^1.3.2",
+    "ngx-build-plus": "^12.2.0",
+    "npm-pack-zip": "^1.2.9",
+    "puppeteer": "^10.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack-manifest-plugin": "^4.0.2",
+    "webpack-merge": "^5.8.0",
+    "webpack-shell-plugin": "^0.5.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
@@ -28,12 +46,17 @@
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
+    "codelyzer": "^6.0.2",
+    "concat": "^1.0.3",
+    "fs-extra": "^10.0.0",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.3.5"
+    "typescript": "~4.3.5",
+    "webpack-cli": "^4.8.0",
+    "webpack-concat-plugin": "^3.0.0"
   }
 }
