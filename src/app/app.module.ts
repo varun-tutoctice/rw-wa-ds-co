@@ -4,10 +4,12 @@ import {createCustomElement} from '@angular/elements';
 
 import { AppComponent } from './app.component';
 import { BrowserWindowProvider, WindowProvider } from '../providers/window.provider';
+import { ChoiceViewComponent } from './choice-view/choice-view.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChoiceViewComponent
   ],
   imports: [
     BrowserModule

@@ -161,7 +161,7 @@
   "defaultProject": "rewards-component",
   "schematics": {
     "@schematics/angular:component": {
-      "styleext": "scss"
+      "style": "scss"
     }
   }
 }
