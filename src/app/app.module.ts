@@ -4,19 +4,22 @@ import {createCustomElement} from '@angular/elements';
 
 import { AppComponent } from './app.component';
 import { BrowserWindowProvider, WindowProvider } from '../providers/window.provider';
-import { ChoiceViewComponent } from './choice-view/choice-view.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { ChoiceviewComponent } from './choiceview/choiceview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChoiceViewComponent
+    ChoiceviewComponent,
   ],
   imports: [
     BrowserModule
   ],
   providers: [BrowserWindowProvider,
     WindowProvider],
- // bootstrap: [AppComponent]
+  
+ // schemas: [CUSTOM_ELEMENTS_SCHEMA]
+ //bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(private injector: Injector) {
