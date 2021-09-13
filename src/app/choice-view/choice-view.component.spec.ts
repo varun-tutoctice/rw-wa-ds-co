@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ChoiceviewComponent } from './choiceview.component';
+import { ChoiceViewComponent } from './choice-view.component';
 
-describe('ChoiceviewComponent', () => {
-  let component: ChoiceviewComponent;
-  let fixture: ComponentFixture<ChoiceviewComponent>;
+describe('ChoiceViewComponent', () => {
+  let component: ChoiceViewComponent;
+  let fixture: ComponentFixture<ChoiceViewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ChoiceviewComponent ]
+      declarations: [ ChoiceViewComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ChoiceviewComponent);
+    fixture = TestBed.createComponent(ChoiceViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

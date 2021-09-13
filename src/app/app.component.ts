@@ -1,8 +1,7 @@
 import { Component, ComponentFactoryResolver, ViewChild, AfterViewInit, OnInit, Input } from '@angular/core';
-import { VoucherComponent } from './voucher/voucher.component';
 import { ViewContainerRef } from '@angular/core';
-import { ChoiceviewComponent } from './choiceview/choiceview.component';
-
+import { WalletViewComponent } from './wallet-view/wallet-view.component';
+import { ChoiceViewComponent } from './choice-view/choice-view.component';
 
 @Component({
   selector: 'custom-root',
@@ -16,15 +15,15 @@ export class AppComponent implements OnInit, AfterViewInit {
   @Input() data: any;
 
   mappingView: any = [
-    {'name':'voucher', 'component':VoucherComponent},
-    {'name':'choice', 'component': ChoiceviewComponent},
+    {'name':'wallet', 'component': WalletViewComponent},
+    {'name':'choice', 'component': ChoiceViewComponent},
   ];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
 
 
   ngOnInit(): void {
-
+    //this.view = 'wallet'
   }
 
 
