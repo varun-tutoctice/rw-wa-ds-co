@@ -1,4 +1,5 @@
 const fs = require('fs-extra');
+const execSync = require('child_process').execSync;
 const concat = require('concat');
 (async function build() {
   const files = [
@@ -10,6 +11,9 @@ const concat = require('concat');
   await fs.emptyDir('./dist/app');
   await fs.copy('./dist/build/', './dist/app/' );
   await concat(files, './dist/app/rewards-component.js');
+  await fs.ensureDirSync('js');
+  await fs.copy('./dist/app/rewards-component.js', 'js/rewards-component.js' );
+
 })();
 
 

@@ -22,6 +22,6 @@ console.error('REMOVING UNWANTED ASSETS');
 fs.removeSync('tmp');
 fs.removeSync('dist/app/rewards-component.js');
 
-// console.error('ZIPPING ARTIFACT');
-// execSync('node ./scripts/build-artifact && node ./scripts/rename');
+console.error('ZIPPING ARTIFACT');
+execSync('node ./scripts/build-artifact && node ./scripts/rename');
 
