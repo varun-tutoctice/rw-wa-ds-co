@@ -1,0 +1,3921 @@
+/**
+ * _views.scss 1/12/2017  //(C) IHG. All rights reserved.
+ * Rewards Club - Keep specific view spec if required
+ */
+.view-header {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  @media (min-width: $screen-sm-min) {
+    margin-top: 33px;
+  }
+
+  .header-title {
+    margin-bottom: 8px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.view-loading {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+
+  .loading-icon {
+    color: $rbf-medium-gray;
+    font-size: 70px;
+  }
+}
+
+.view-error-lazy-load {
+  font-size: 8px;
+  color: #707372;
+  padding-bottom: 0px;
+  padding-top: 29px;
+}
+
+//  ----------------------------------------
+//  Background
+//  ----------------------------------------
+.background-white {
+  background-color: $white;
+}
+
+.background-neutral-gray {
+  background-color: $neutral-gray;
+}
+
+.background-dark-gray {
+  background-color: $rbf-dark-gray;
+}
+
+.color-white {
+  color: $white !important;
+}
+
+.button-container {
+  button {
+    width: 100%;
+  }
+}
+
+.brandLogoContainer{
+  float: left;
+  height: 40px;
+  width: 40px;
+  @media (min-width: $screen-md-min) {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+// ----------------------------------------
+// View Components Specs
+// ----------------------------------------
+.past-stays-container {
+  padding: 11px 20px 0 26px;
+  border-bottom: solid 1px $rbf-dark-gray;
+}
+
+.search-stay {
+  padding: 0 $page-margin-xs 0;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 0 0 0;
+  }
+
+  .search-element {
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .find-element {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: 24px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.one-char-input {
+  width: 14vw !important;
+  @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    width: 8vw !important;
+  }
+  @media(min-width: $screen-md-min) {
+    width: 5vw !important;
+  }
+}
+
+.accordion-toggle {
+  font-size: 18px;
+}
+
+// ----------------------------------------
+// Two Column Elements
+// ----------------------------------------
+.left-element, .right-element {
+  width: calc(50% - 15px);
+}
+
+.left-element {
+  margin-right: 15px;
+}
+
+.right-element {
+  margin-left: 15px;
+}
+
+.dynamic-cols {
+  .col-all {
+    display: flex;
+    width: 100%;
+  }
+
+  .col-left, .col-right {
+    width: 100%;
+    @media (min-width: $screen-sm-min) {
+      width: calc(50% - 15px);
+    }
+  }
+
+  .col-left {
+    @media (min-width: $screen-md-min) {
+      width: calc(33% - 15px);
+    }
+  }
+
+  .col-right {
+    @media (min-width: $screen-md-min) {
+      width: calc(67% - 15px);
+    }
+  }
+}
+
+.query-mark {
+  margin-left: 10px;
+  align-self: center;
+  float: left;
+  width: 22px;
+  height: 20px;
+}
+
+.error-info-box {
+  @include flex-container;
+  background-color: $neutral-gray3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px $page-margin-xs 35px;
+
+  @media (min-width: $screen-sm-min) {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+
+  .message-icon {
+    margin-right: 10px;
+    min-height: 30px;
+    max-height: 30px;
+    min-width: 30px;
+    max-width: 30px;
+    background-image: $icon-alert;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-flex;
+  }
+}
+
+.message-info {
+  @include flex-container;
+
+  align-items: center;
+
+  .message-icon {
+    color: $rbf-dark-gray;
+    margin-right: 5px;
+    min-width: 30px;
+    font-size: 14px;
+  }
+}
+
+.error-message {
+  @extend .error-note;
+
+  margin-bottom: 11px;
+}
+
+.required-field::after {
+  content: "*";
+  margin-left: 2px;
+}
+
+.edit-phone {
+  .residence-radio-container {
+    @include make-radio-box;
+  }
+
+  .business-radio-container {
+    @include make-radio-box;
+  }
+
+  .mobile-check {
+    @include make-check-box;
+  }
+}
+
+.billing-mobile-check {
+  @include make-check-box;
+}
+
+.category-check {
+  @include make-check-box;
+}
+
+.edit-subscriptions {
+  .subscription-check {
+    @include make-check-box;
+  }
+
+  .refineLabel {
+    border: none !important;
+    padding: 0px !important;
+  }
+
+  .inputContainer {
+    align-items: flex-start !important;
+  }
+
+  .inputItem {
+    margin: 0px !important;
+    margin-right: 4px !important;
+  }
+}
+
+.edit-mailing-address {
+  .residence-radio-container {
+    @include make-radio-box;
+  }
+
+  .business-radio-container {
+    @include make-radio-box;
+  }
+}
+
+.edit-earning-preferences {
+  .points-radio-container {
+    @include make-radio-box;
+  }
+
+  .miles-radio-container {
+    @include make-radio-box;
+  }
+}
+
+.messages-container {
+  .p-slot-container {
+    justify-content: center;
+  }
+  .link {
+    align-self: flex-start !important;
+  }
+  .content {
+    text-align: left !important;
+
+    @media(max-width: $screen-sm-max) {
+      flex-direction: column !important;
+    }
+    flex-direction: row !important;
+  }
+
+  .tile-image {
+     @media (min-width: $screen-sm-min) {
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-right: 5px;
+    }
+  }
+  .messages-portlet-title {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 20px;
+    }
+  }
+
+  p.messages-content {
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .messages-base-portlet {
+    padding: 20px $page-margin-xs 30px;
+    border-bottom: solid 1px $rbf-dark-gray;
+
+    @media (min-width: $screen-sm-min) {
+      padding: 25px $page-margin-xs 30px;
+    }
+  }
+
+  .messages-image {
+    width: 100%;
+
+    @media (min-width: $screen-sm-min) {
+      width: 90%;
+    }
+  }
+}
+
+.safety-query {
+  background: $icon-query;
+}
+
+//  ----------------------------------------
+//  Member Benefits
+//  ----------------------------------------
+.member-benefits {
+  .intro-text {
+    @media(max-width: $screen-xs-max) {
+      display: block;
+      margin-bottom: 20px;
+    }
+    @media(min-width: $screen-sm-min) {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+
+  .sections-container {
+    .active-slot {
+      .benefits-description {
+        display: flex !important;
+      }
+    }
+
+    .component-background {
+      :hover {
+        cursor: pointer;
+      }
+    }
+
+    .slot {
+      border-bottom: 1px solid $rbf-dark-gray;
+      padding: 15px 4.16% 30px;
+
+      @media (min-width: $screen-sm-min) {
+        padding-top: 20px;
+      }
+
+      .benefits-header {
+        .content {
+          @include flex-container;
+          flex-direction: row;
+
+          .tile-image {
+            order: 1;
+            width: 30%;
+            margin-right: 8.33%;
+            @media (min-width: $screen-sm-min) {
+              width: 16.66%;
+              margin-right: 8.33%;
+            }
+            img {
+              max-width: 100%;
+            }
+          }
+
+          .tile-desc {
+            order: 2;
+            align-self: center;
+            .sub-header {
+              @extend .body-small-semibold;
+            }
+          }
+        }
+      }
+
+      .benefits-description {
+        display: none;
+        margin-top: 30px;
+        .content {
+          .tile-desc {
+            .desc {
+              .visible-content {
+                @extend .t1-t5-body;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .club-slot {
+      .tile-header {
+        @extend .t4;
+        @extend .club-color;
+      }
+    }
+
+    .gold-slot {
+      .tile-header {
+        @extend .t4;
+        @extend .gold-color;
+      }
+    }
+
+    .platinum-slot {
+      .tile-header {
+        @extend .t4;
+        @extend .pltn-color;
+      }
+    }
+    .spire-slot {
+      .tile-header {
+        @extend .t4;
+        @extend .spre-color;
+      }
+    }
+    .ambassador-slot {
+      .tile-header {
+        @extend .t4;
+        @extend .amb-color;
+      }
+    }
+  }
+
+  .footnotes {
+    margin-bottom: 90px;
+    .desc {
+      padding: 20px 4.16% 25px;
+      @extend .note-body;
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Hotel Bill
+//  ----------------------------------------
+.hotel-bill-details {
+
+  .email-bill, .print-bill {
+    @include icon(24px, 16px);
+    display: inline-block;
+  }
+  .email-bill {
+    height: 22px;
+    background-image: $icon-email;
+  }
+  .email-bill-align-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .print-bill {
+    height: 21px;
+    background-image: $icon-print;
+  }
+  .icons-separator {
+    height: 25px;
+  }
+  .icon-container {
+    text-decoration: none;
+  }
+
+  .button-container {
+    padding-left: 0;
+    padding-right: 0;
+    button {
+      width: 100%;
+    }
+  }
+  .email-bill-button {
+    @media(min-width: $screen-sm-min) {
+      width: 35%;
+      float: right;
+    }
+  }
+  .email-bill-cancel {
+    padding: 15px 0px;
+  }
+
+  hr.horizontal_rule {
+    background-color: $neutral-gray;
+    border-color: $neutral-gray;
+    border-width: 2px;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: -5px;
+  }
+
+  .hb-aligner-item--bottom {
+    align-self: flex-end;
+  }
+
+  .hotel_bill_hide_xs {
+    @media(max-width: $screen-sm-max) {
+      display: none;
+    }
+
+  }
+
+  .hotel_bill_hide_large {
+    @media(min-width: $screen-md-min) {
+      display: none;
+    }
+  }
+
+  .hb-aligner-item--bottom {
+    align-self: flex-end;
+  }
+
+  .hotel-bill-container-vertical-align {
+
+    margin-top: 20px !important;
+
+    @media(min-width: $screen-sm-min) {
+      margin-top: 30px !important;
+    }
+  }
+
+  .hotel-bill-header-vertical-align {
+
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+
+    @media(min-width: $screen-sm-min) {
+      margin-top: 35px !important;
+      margin-bottom: 25px !important;
+    }
+
+    @media(min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      margin-top: 40px !important;
+      margin-bottom: 30px !important;
+    }
+  }
+
+  .hotel-bill-street {
+    display : block;
+    @media(min-width: $screen-sm-min) {
+      display : inline;
+    }
+  }
+
+  .hotel-bill-comma {
+    display: none;
+    @media(min-width: $screen-sm-min) {
+      display : inline;
+      margin-left : -4px;
+    }
+  }
+
+  .hotel-bill-city {
+    display : block;
+    @media(min-width: $screen-sm-min) {
+      display : inline;
+    }
+  }
+
+  .hotel-bill-country {
+    display : block;
+    @media(min-width: $screen-sm-min) {
+      display : inline;
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Offers
+//  ----------------------------------------
+.offers-container {
+
+  .tile-image {
+    .img-responsive {
+      width: 100%;
+      margin-bottom: 15px !important;
+    }
+  }
+
+  .tile-desc {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    text-align: left;
+    .tile-header {
+      p {
+        @extend .t5;
+      }
+    }
+    .desc {
+      margin-bottom: 20px !important;
+      p {
+        @extend .t1-t5-body;
+      }
+    }
+  }
+
+  .sub-title{
+    margin-bottom:30px;
+  }
+
+  ui-slot {
+    display: block;
+    .slots-container {
+      .ui-slot-container {
+        .p-slot-container {
+          .generic-tile {
+            .content {
+              .tile-desc {
+                .link {
+                  align-self: start !important;
+                  a {
+                    @extend .inline-cta;
+                    background-color: white;
+                    padding: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    .ie-width {
+      .slots-container {
+        width: 100%;
+      }
+    }
+    .slots-container {
+      .slot-tile {
+        padding: 0px;
+      }
+    }
+  }
+  .slots-container {
+    @media (min-width: $screen-sm-min) {
+
+      .slot-tile {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+      .one-slot{
+        width:50% !important;
+      }
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .left .p-off {
+      padding-left: $page-margin-xs;
+      padding-right: 15px;
+    }
+    .right .p-off {
+      padding-left: 15px;
+      padding-right: $page-margin-xs;
+    }
+  }
+
+  .view-header {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: 32px;
+      margin-bottom: 25px;
+    }
+    .header-title {
+      margin-bottom: 8px;
+
+      @media (min-width: $screen-sm-min) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .offers-signed-up-title {
+    margin-bottom: 10px;
+    margin-top: 40px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
+  }
+  .available-offers-title{
+    margin-bottom: 30px;
+    margin-top: 45px;
+  }
+  .end-of-offers {
+    height: 30px;
+
+    @media (min-width: $screen-sm-min) {
+      height: 40px;
+    }
+  }
+
+  .view-rco-header {
+    margin-top: 38px;
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: 8px;
+    }
+  }
+  .rco-header-title {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 30px;
+    }
+  }
+  .rco-offer {
+    padding-bottom: 2px;
+
+    .rco-image {
+      display: block;
+      margin-bottom: 12px;
+      height: 120px;
+      margin-left: 0px;
+      margin-right: 0px;
+      background-image: url("//ihg.scene7.com/is/image/ihg/864_exclusive_benefits_01");
+
+    }
+    .rco-image-left {
+      margin-left: 0px;
+      @media (min-width: $screen-sm-min) {
+        margin-left: 5px;
+      }
+    }
+
+    .rco-image-right {
+      margin-right: 0px;
+      @media (min-width: $screen-sm-min) {
+        margin-right: 5px;
+      }
+    }
+
+    .rco-details {
+      // Leaving this code commented while we findout if slot-id content needs it
+      // margin-left: 18px;
+
+      .rco-details-title {
+        margin-bottom: 2px;
+      }
+
+      .rco-details-text {
+        margin-bottom: 12px;
+      }
+
+      .rco-details-link {
+        margin-bottom: 15px;
+        display: block;
+      }
+
+      .rco-content-not-loaded {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+      }
+    }
+  }
+  .rco-offer-left-visible-sm {
+    @media (max-width: $screen-xs-max) {
+      margin-left: -15px;
+      margin-right: -15px;
+      border-bottom: solid 1px $rbf-dark-gray;
+      margin-bottom: 0px;
+    }
+  }
+  .rco-offer-right-visible-sm {
+    @media (max-width: $screen-xs-max) {
+      margin-left: -15px;
+      margin-right: -15px;
+      border-bottom: solid 1px $rbf-dark-gray;
+      margin-bottom: 0px;
+    }
+  }
+  .rco-offer-left {
+    border-bottom: solid 1px $rbf-dark-gray;
+    margin-bottom: 0px;
+  }
+  .rco-offer-right {
+    border-bottom: solid 1px $rbf-dark-gray;
+    margin-bottom: 0px;
+  }
+
+  .anchor-offer {
+    @media (min-width: $screen-sm-min) {
+      @include flex-container;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+  }
+
+  //  Container for offers
+  .offer-grid-container {
+    .offers-signed-up-portlet {
+      @extend .base-portlet;
+      @extend .background-white;
+      padding: 0px;
+
+      .title {
+        padding-top: 5px;
+        padding-bottom: 2px;
+      }
+
+      .offer-long-desc a {
+        @extend .inline-cta;
+      }
+    }
+
+    .offer-column {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Hotel Reviews
+//  ----------------------------------------
+.hotel-reviews {
+
+  .view-header {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    @media (min-width: $screen-sm-min) {
+      margin-top: 35px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .hotel-review-container {
+    width: 100%;
+
+    .hotel-review {
+      width: 100%;
+      border-bottom: 1px solid $rbf-dark-gray;
+    }
+
+    .hotel-review {
+      .button-container {
+        padding: 20px 0 10px;
+      }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      width: 50%;
+      padding-bottom: 35px;
+      // It takes place on left because "even" starts on 0 while iterating array
+      &.p-even {
+        padding-left: $page-margin-xs;
+        padding-right: floor(($grid-gutter-width / 2));
+      }
+      &.p-odd {
+        padding-left: ceil(($grid-gutter-width / 2));
+        padding-right: $page-margin-xs;
+      }
+      .hotel-review {
+        padding-top: 25px;
+        .button-container {
+          padding-bottom: 15px;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+
+  .button-container {
+    padding: 20px $page-margin-xs 10px;
+    @media (min-width: $screen-md-min) {
+      padding: 20px calc(#{percentage((7 / $grid-columns))} + #{$grid-gutter-width}) 10px percentage(1 / $grid-columns);
+    }
+  }
+
+  .imgage-source {
+    position: relative;
+  }
+
+  .image-label1 {
+    position: absolute;
+    top: 10px;
+    left: $page-margin-xs;
+    width: 65%;
+
+    @media (min-width: $screen-md-min) {
+      top: 10px;
+      width: 50%;
+    }
+  }
+
+  .image-label2 {
+    position: absolute;
+    top: 50px;
+    left: $page-margin-xs;
+    width: 65%;
+    @media (min-width: $screen-md-min) {
+      top: 60px;
+      width: 50%;
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Account Activity container & component
+//  ----------------------------------------
+#viewAccountActivity {
+
+  .print-view {
+    @include icon(30px, 27px);
+    background-image: $icon-print;
+    display: inline-flex;
+    align-self: center;
+  }
+  .pts-miles-module {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .account-activity {
+    .row > div {
+      padding-left: $page-margin-xs;
+      padding-right: $page-margin-xs;
+    }
+
+    .clickable {
+      cursor: pointer;
+    }
+
+    .activity-container {
+      border-bottom: solid 1px $rbf-dark-gray;
+
+      .left-content {
+        width: percentage(11 / $grid-columns);
+        flex-direction: column;
+        .detail-wrap {
+          width: percentage(6 / 11);
+          padding-right: ceil(($grid-gutter-width / 2));
+        }
+        .amount-wrap {
+          padding-left: floor($grid-gutter-width / 2);
+        }
+      }
+      .right-content {
+        width: percentage(1 / $grid-columns);
+      }
+
+      .more-details {
+        @include icon(20px, 37px);
+        background-image: $icon-chevron-right;
+        display: inline-block;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        &.padding {
+          padding-top: 17px;
+        }
+        .left-content {
+          flex-direction: row;
+          .date-wrap {
+            width: percentage(2 / 11);
+          }
+          .group-detail-wrap {
+            width: percentage(8 / 11);
+            .detail-wrap {
+              width: percentage(6 / 8);
+              padding-left: floor($grid-gutter-width / 2);
+            }
+          }
+        }
+      }
+    }
+
+    .activity-header {
+      @extend .activity-container;
+
+      @media (min-width: $screen-sm-min) {
+        .date-wrap {
+          .date-separator {
+            display: none;
+          }
+        }
+      }
+
+      @media print {
+        .date-wrap, .detail-wrap, .amount-wrap {
+          color: $black !important;
+        }
+      }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      .button-container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      .p-wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .row > div {
+        padding-left: $grid-gutter-width;
+        padding-right: $grid-gutter-width;
+      }
+    }
+  }
+
+  .past-stay-search {
+    .search-fields-container {
+
+      .calendar-container {
+        position: absolute;
+        z-index: 100;
+        top: 110px;
+      }
+
+      .form-element {
+        .error-inline-container {
+          span {
+            margin-top: 8px;
+          }
+        }
+        input {
+          &.date-input {
+            background-color: $white;
+            background-image: url('/cdn/vendor/ihgimages/v1.0.0/icon_calendar.svg');
+            background-repeat: no-repeat;
+            background-size: 30px 30px;
+            background-position-y: 7px;
+            background-position-x: calc(100% - 8px);
+          }
+          &.date-input[readonly] {
+            background-color: $white;
+          }
+        }
+      }
+      .date-input {
+        background-image: url('/cdn/vendor/ihgimages/v1.0.0/icon_calendar.svg');
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position-y: 7px;
+        background-position-x: calc(100% - 8px);
+      }
+
+      .date-input[readonly] {
+        background-color: $white;
+      }
+    }
+
+    .controls-container {
+      .past-stay-search-error {
+        .error-info-box {
+          margin: 20px 0px 0px;
+          padding-bottom: 25px;
+        }
+      }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      .search-fields-container {
+        padding-top: 30px;
+        padding-bottom: 10px;
+      }
+      .controls-container {
+        padding-top: 30px;
+        padding-bottom: 50px;
+      }
+    }
+    .step-container {
+      .match-reservation {
+        border-bottom: solid 1px $rbf-dark-gray;
+        .conf-number {
+          display: block;
+          @media (min-width: $screen-sm-min) {
+            margin-bottom: 12px;
+            text-align: right;
+          }
+        }
+        .hotel-info {
+          @media (min-width: $screen-sm-min) {
+            margin-bottom: 25px;
+          }
+          .hotel-name {
+            line-height: 28px;
+            display: inline-table;
+          }
+        }
+        .controls {
+          display: flex;
+          align-items: center;
+        }
+        .error-info-box {
+          margin: 20px 0 0 0;
+          @media (min-width: $screen-sm-min) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .associated {
+        border-bottom: solid 1px $rbf-dark-gray;
+        @media (min-width: $screen-sm-min) {
+          margin-bottom: 50px;
+        }
+        .error-info-box {
+          margin-top: 20px;
+          margin-bottom: 30px;
+          font-size: 16px;
+          @media (min-width: $screen-sm-min) {
+            margin-bottom: 40px;
+          }
+        }
+      }
+      .error-info-box {
+        display: flex;
+        align-items: inherit;
+      }
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Earning Details
+//  ----------------------------------------
+.earning-container {
+  @extend .page-container;
+
+  .earning-portlet {
+    @extend .base-portlet;
+    padding: 0px !important;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    .earning-row-left {
+      padding-left: 20px;
+      margin-bottom: 6px;
+    }
+    .earning-row-right {
+      padding-right: 20px;
+      padding-left: 0px;
+      margin-top: auto;
+      margin-bottom: 6px;
+    }
+  }
+
+  .foreign-currency {
+    display: block;
+  }
+
+  .no-bottom-border {
+    border-bottom: 0px !important;
+  }
+
+  .earning-title {
+    margin-bottom: 7px;
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 20px;
+    }
+  }
+
+  span.align-center {
+    align-self: center;
+  }
+
+  .checkmark {
+    @include icon(20px, 15px, $icon-checkmark);
+    @extend .align-center;
+    display: inline-block;
+  }
+
+  .hotel-name {
+    @media (min-width: $screen-sm-min) {
+      margin-top: -5px;
+    }
+  }
+
+  .white-color {
+    color: white;
+  }
+
+  .view-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    @media (min-width: $screen-sm-min) {
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .total-base-points-earned {
+    margin-bottom: 5px;
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .base-bonus-points {
+    padding: 15px 10px 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px $rbf-dark-gray;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .p-earning-details {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: $screen-sm-min) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .hotel-bill-not-available {
+      text-align: center;
+    }
+  }
+
+  a.center-text {
+    text-align: center;
+    display: block;
+  }
+
+  h5.title {
+    width: 90%;
+  }
+
+  .fixed-top-info-box {
+    margin-top: 0px;
+  }
+
+  .pending-small {
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: 15px;
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Stay Details.
+//  ----------------------------------------
+.stay-details {
+
+  .stay-info {
+    border-bottom: solid 1px $rbf-dark-gray;
+  }
+
+  .stay-details-button {
+    text-align: center;
+    width: 100%;
+
+    @media (min-width: $screen-sm-min) {
+      width: 70%;
+    }
+
+    @media (min-width: $screen-md-min) {
+      width: 65%;
+    }
+  }
+
+  .stay-associate-button {
+    text-align: center;
+    width: 100%;
+  }
+
+  .front-desk-stays-detail {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-sm-min) {
+      flex-direction: row;
+    }
+
+    .front-desk-number {
+      margin-left: 0px;
+
+      @media (min-width: $screen-sm-min) {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  reservation-payment-alert {
+    .error-info-box {
+      margin-bottom: 20px;
+    }
+  }
+
+}
+
+//  ----------------------------------------
+//  Points estimator section
+//  ----------------------------------------
+.points-estimator {
+  .not-match-container {
+    display: inline-block;
+  }
+  .foundStay-earnings-button {
+    text-align: center;
+    width: 100%;
+  }
+  .cancel-button.col-xs-12.col-sm-6, .continue-button.col-xs-12.col-sm-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  @media (min-width: $screen-sm-min) {
+    .t2-sub-custom {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19.2px;
+      margin-bottom: 10px;
+    }
+    .cancel-button.col-xs-12.col-sm-6 {
+      padding-right: 15px;
+    }
+    .continue-button.col-xs-12.col-sm-6 {
+      padding-left: 15px;
+    }
+  }
+
+  .estimator-table {
+    padding: 5px 10px;
+    .estimator-row {
+      margin-top: 10px;
+      margin-left: 30px;
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Points page
+//  ----------------------------------------
+.points-container {
+  .points-header {
+    border-bottom: solid 1px $rbf-dark-gray;
+    padding: 15px 0 25px;
+  }
+
+  .points-links {
+    @media (min-width: $screen-sm-min) {
+      @include flex-container;
+      flex-direction: column;
+      height: 174px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-between;
+    }
+
+    .points-link {
+      border-bottom: solid 1px #3f3d3d;
+      padding: 0 30px;
+
+      @media (min-width: $screen-sm-min) {
+        width: 48%;
+      }
+    }
+  }
+
+  .points-actions {
+    @include flex-container;
+
+    @media (max-width: $screen-xs-max) {
+      flex-direction: column;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      justify-content: center;
+    }
+
+    div {
+      @media (max-width: $screen-xs-max) {
+        align-self: center;
+      }
+    }
+
+    .points-actions-separator {
+      width: 20%;
+
+      @media (max-width: $screen-xs-max) {
+        display: none;
+      }
+    }
+
+  }
+
+  .points-slot {
+    background: $white;
+    border-bottom: solid 1px $rbf-dark-gray;
+    padding: 20px 40px 70px 40px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: 20px;
+      padding: 0;
+      width: calc(33.33% - 20px);
+    }
+
+    .tile-image {
+      img {
+        width: 100%;
+      }
+    }
+
+    .tile-desc {
+      text-align: start;
+      padding: 11px 30px 23px;
+
+      @media (min-width: $screen-sm-min) {
+        padding-top: 15px;
+      }
+
+      @media (min-width: $screen-md-min) {
+        padding-top: 25px;
+      }
+
+      .tile-header {
+        margin-bottom: 7px;
+
+        @media (min-width: $screen-sm-min) {
+          margin-bottom: 2px;
+        }
+
+        @media (min-width: $screen-md-min) {
+          margin-bottom: 8px;
+        }
+
+        p {
+          @extend .t2;
+        }
+      }
+
+      .desc {
+        span {
+          p {
+            @extend .t1-t5-body;
+          }
+          a {
+            @extend .inline-cta;
+          }
+        }
+      }
+    }
+
+  }
+
+  .points-donate-slot {
+    background: $white;
+    border-bottom: solid 1px $rbf-dark-gray;
+
+    @media (min-width: $screen-sm-min) {
+      padding: 0;
+    }
+
+    .content {
+      @media (min-width: $screen-sm-min) {
+        display: flex;
+      }
+
+      .tile-image {
+        width: 100%;
+        overflow: hidden;
+
+        @media (min-width: $screen-sm-min) {
+          width: 60%;
+        }
+
+        @media (min-width: $screen-md-min) {
+          width: 33%;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .tile-desc {
+        padding: 15px 20px 20px;
+        position: relative;
+
+        @media (min-width: $screen-sm-min) {
+          padding: 30px 0 0 8%;
+        }
+
+        @media (min-width: $screen-md-min) {
+          padding-top: 20px;
+        }
+
+        .tile-header {
+          margin-bottom: 2px;
+
+          p {
+            @extend .t5;
+          }
+        }
+
+        .desc {
+          width: calc(100% - 65px);
+
+          span {
+            p {
+              @extend .t1-t5-body;
+            }
+            a {
+              @extend .inline-cta;
+            }
+          }
+        }
+
+        .right-caret {
+          position: absolute;
+          right: 30px;
+          top: calc(50% - 15px);
+        }
+      }
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Slots Carousel
+//  ----------------------------------------
+.carousel-indicators {
+  .active {
+    margin: 5px 5px 27px;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+  }
+
+  li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px 27px;
+    text-indent: -999px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 15px;
+  }
+}
+
+//  ----------------------------------------
+//  Upcoming reservations and Cancelled Stays
+//  ----------------------------------------
+.stays-events-container {
+
+  .stays-events-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    @media (min-width: $screen-sm-min) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .slots-container {
+    padding: 0 $page-margin-xs 25px;
+
+    @media (min-width: $screen-sm-min) {
+      padding: 0 0 45px;
+      display: flex;
+    }
+  }
+
+  .upcoming-reservations {
+    margin-bottom: 1px;
+
+    @media(min-width: $screen-sm-min) {
+      margin-bottom: 30px;
+    }
+    .row-upcoming {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .reservation-details {
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: space-between;
+      }
+    }
+
+    reservation-payment-alert {
+      margin: 20px 20px 0 20px;
+    }
+  }
+
+  .past-stays {
+    margin-bottom: 10px;
+
+    a {
+      cursor: pointer;
+    }
+
+    .past-stays-details {
+      display: flex;
+      justify-content: space-between;
+      @media(max-width: $screen-sm-max) {
+        padding: 10px 28px 2px 28px;
+      }
+
+      @media(max-width: $screen-xs-max) {
+        flex-direction: column;
+        padding: 10px 20px 15px 20px;
+      }
+
+      .contact-hotel-container{
+        @media(min-width: $screen-sm-min) {
+          padding-top:15px;
+          margin-bottom:7px;
+        }
+      }
+
+      .left-past {
+        @media(min-width: $screen-sm-min) {
+          width: 100%;
+        }
+      }
+
+      @media(max-width: $screen-xs-max) {
+        .order-1 {
+          order: 1;
+        }
+        .order-2 {
+          order: 2;
+        }
+        .order-3 {
+          order: 3;
+        }
+        .order-4 {
+          order: 4;
+        }
+      }
+
+      .right-past {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .stay-again-cta {
+          text-align: center;
+        }
+
+        .right-past-left .right-past-container{
+          height:auto;
+        }
+
+        .right-past-container.write-review{
+          height:auto;
+          padding-top:0;
+        }
+
+        .right-past-container {
+          height: 53px;
+          @media(min-width: $screen-sm-min) {
+            margin-bottom: 20px;
+            padding-top: 5px;
+          }
+          width: 100%;
+          display: flex;
+
+          write-stay-review {
+            @media(max-width: $screen-xs-max) {
+              padding-top: 20px;
+            }
+          }
+          hotel-bill {
+            width: 100%;
+          }
+          .hotel-bill-cta{
+            width: 100%;
+            @media(min-width: 768px) {
+              height: 48px;
+            }
+            @media(max-width: 767px) {
+              height: 52px;
+            }
+            align-items: center;
+            text-align: center;
+          }
+          a {
+            width: 100%;
+            align-items: center;
+          }
+        }
+
+        .right-past-left {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          margin-right: 10px;
+          margin-bottom: 20px;
+          width: 50%;
+          @media(max-width: $screen-xs-max) {
+            width: 100%;
+          }
+
+          .text-left {
+            text-align: left;
+            @media(max-width: $screen-xs-max) {
+              padding-top: 14px;
+            }
+          }
+        }
+        .right-past-right {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          margin-left: 10px;
+          width: 50%;
+          @media(max-width: $screen-xs-max) {
+            width: 100%;
+            margin-left: 0;
+          }
+        }
+
+        @media(min-width: $screen-sm-min) {
+          width: 100%;
+          flex-direction: row;
+        }
+
+        .hotel-bill-cta {
+          width: 100%;
+          padding: 14px 16px;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .load-more-button {
+    width: 33%;
+    margin-bottom: 30px;
+    @media(max-width: $screen-xs-max) {
+      width: 100%;
+    }
+  }
+
+  .cancelled-stays {
+    margin-bottom:10px;
+    .cancelled-stays-details {
+      display: flex;
+      justify-content: space-between;
+      @media(max-width: $screen-xs-max) {
+        flex-direction: column;
+      }
+      .left-cancelled {
+        @media(min-width: $screen-sm-min) {
+          width: 80%;
+        }
+        .hotel-brand {
+          display: flex;
+          flex-direction: column;
+        }
+        .city-state {
+          display: flex;
+          margin-bottom: 5px;
+          @media(min-width: $screen-sm-min) {
+            margin-bottom: 0px;
+          }
+        }
+        .front-desk {
+          display: flex;
+          margin-bottom: 10px;
+          @media(min-width: $screen-sm-min) {
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .right-cancelled {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        @media(min-width: $screen-sm-min) {
+          width: 100%;
+          flex-direction: row;
+        }
+        a {
+          width: 100%;
+          text-align: center;
+
+          @media(min-width: $screen-sm-min) {
+            width: 50%;
+          }
+        }
+
+        .confirmation-number, .cancellation-number {
+          display: flex;
+
+          @media(min-width: $screen-sm-min) {
+            flex-direction: column;
+            justify-content: flex-start;
+          }
+        }
+
+        .confirmation-number {
+          margin-bottom: 5px;
+
+          @media(min-width: $screen-sm-min) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .reservations-data {
+    display: flex;
+  }
+  .reservations-data-text {
+    flex-direction: column;
+  }
+  hotel-brand-logo {
+    @media (max-width: 767px) {
+      margin-right: 10px;
+      height: 40px;
+      width: 40px;
+    }
+    @media (min-width: 768px) {
+      margin-right: 15px;
+      height: 60px;
+      width: 60px;
+    }
+  }
+
+  //  ----------------------------------------
+  //  Stays & Events - Events
+  //  ----------------------------------------
+  .events {
+    .t3-sub {
+      font-size: 12px;
+    }
+    @media (min-width: $screen-xs-max) {
+      .t3-sub {
+        font-size: 14px;
+      }
+    }
+    @media (min-width: $screen-sm-max) {
+      .t3-sub {
+        font-size: 16px;
+      }
+    }
+    .non-br-content {
+      img {
+        padding-top: 19px;
+      }
+      a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        width: 33%;
+        text-align: center;
+
+        @media(max-width: $screen-xs-max) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Events Management- Events View
+//  ----------------------------------------
+.back-stayevents {
+  margin-bottom: 20px;
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: 30px;
+  }
+}
+
+.events {
+  .parent-icon {
+    margin: auto 0;
+  }
+  .event-accordeon {
+    padding-bottom: 1px;
+    &.panel-open {
+      padding-bottom: 30px;
+    }
+    .event-list {
+      margin-bottom: 2px;
+      padding-top: 20px;
+      background-color: $neutral-gray;
+      @media (min-width: $screen-sm-min) {
+        padding-top: 30px;
+      }
+      .events {
+        padding-bottom: 2px;
+        .event-info {
+          margin: 0;
+          padding: 0;
+          @media (min-width: $screen-sm-min) {
+            margin-left: 5px;
+            margin-right: 30px;
+          }
+        }
+        .image-brand {
+          margin-bottom: 5px;
+          max-height: 175px;
+          margin-right: -15px;
+          margin-left: -15px;
+          @media (min-width: $screen-sm-min) {
+            margin-bottom: 20px;
+            position: relative;
+            margin-left: 0;
+            .img-responsive {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+        .hotel-image {
+          width: auto;
+          overflow: hidden;
+        }
+        .event-item {
+          padding: 0 15px 0 15px;
+          @media (min-width: $screen-sm-min) {
+            padding-top: 28px;
+            width: auto;
+          }
+        }
+      }
+      .load-more-button {
+        width: 100%;
+        @media (min-width: $screen-sm-min) {
+          width: 40%;
+        }
+      }
+    }
+  }
+  .create-event {
+    .component-section {
+      padding-top: 10px;
+      @media (min-width: $screen-sm-min) {
+        padding-top: 8px;
+      }
+      .inputContainer {
+        display: flex;
+        .inputItem {
+          margin-right: 20px;
+          .refineCheckInput-hidden {
+            display: none;
+          }
+        }
+        .textItem {
+          -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          -ms-flex-negative: 1;
+          flex-shrink: 1;
+          overflow: hidden;
+          word-wrap: break-word;
+        }
+      }
+      .brandCheckBoxIcon {
+        border: solid 1px $ihg-mango2;
+        font-size: .62em;
+        width: 32px;
+        height: 32px;
+        .brandCheckBox {
+          color: transparent;
+        }
+        i {
+          width: 30px;
+          height: 30px;
+          &.brandCheckMark-color {
+            .filterCheckboxRect {
+              fill: $ihg-mango2;
+            }
+          }
+        }
+      }
+      .save-container {
+        .save-button {
+          width: 100%;
+        }
+      }
+      .form-element {
+        padding-left: 0;
+        @media (min-width: $screen-sm-min) {
+          padding-right: 15px;
+          padding-bottom: 25px;
+        }
+        input {
+          margin-bottom: 3px;
+        }
+        .label-container{
+          position: relative;
+          display: inline-block;
+          width: 100%;
+          @media (min-width: $screen-sm-min) {
+            margin-top: 35px;
+          }
+          label {
+            margin-bottom: 5px;
+            bottom: 0;
+            height: auto;
+            @media (min-width: $screen-sm-min) {
+              position: absolute;
+            }
+          }
+        }
+      }
+      .create-event-error {
+        .error-info-box {
+          margin-top: 5px;
+          padding-bottom: 20px;
+          margin-bottom: 0;
+          @media (min-width: $screen-sm-min) {
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.carousel-control {
+  max-width: 45px;
+  opacity: 1;
+  background-image: none !important;
+
+  .glyphicon {
+    &:before {
+      content: '';
+    }
+  }
+
+  .glyphicon-chevron-right {
+    @include icon(15px, 25px);
+    background-image: $icon-chevron-right-bold;
+  }
+
+  .glyphicon-chevron-left {
+    @include icon(15px, 25px);
+    background-image: $icon-chevron-right-bold;
+    transform: rotate(180deg);
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+//  ----------------------------------------
+//  Events Management- Events Detail View
+//  ----------------------------------------
+.event-details {
+  .error-event-details{
+    .error-info-box {
+      margin:0 ;
+    }
+  }
+
+  .add-stay-section, .hotel-information-section {
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 1px;
+      margin-left: -40px;
+      margin-right: -40px;
+    }
+    .accordion-header {
+      @media (min-width: $screen-sm-min) {
+        background-color: transparent;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      .header-title {
+        &.header-title-accordion {
+          span {
+            @media all and (min-width: 768px) and (max-width: 991px) {
+              @include font($chronicle_font_family, 18px, 21.6px, -0.04px, 600, italic, normal, $rbf-dark-gray);
+            }
+            @media all and (min-width: 992px) {
+              @include font($chronicle_font_family, 20px, 24px, -0.04px, 600, italic, normal, $rbf-dark-gray);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .guest-list-section {
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 1px;
+      margin-left: -40px;
+      margin-right: -40px;
+    }
+    @media (min-width: $screen-sm-min) {
+      padding-top: 10px;
+    }
+    .view-more-container {
+      @media (min-width: $screen-sm-min) {
+        padding-bottom: 0px;
+        padding-left: 0px;
+      }
+      .view-more {
+        width: 100%;
+      }
+    }
+
+    .guest-row {
+      @media (max-width: $screen-xs-max) {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      @media (min-width: $screen-xs-max) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      a {
+        font-weight: normal;
+      }
+
+      .numeric-col {
+        span {
+          display: inline;
+          @media (min-width: $screen-sm-min) {
+            display: block;
+          }
+        }
+      }
+      .name-col {
+        @media (min-width: $screen-sm-min) {
+          padding-left: 20px;
+        }
+      }
+    }
+
+    .border-line-row {
+      margin-left: 0px;
+      margin-right: 0px;
+      border-bottom: solid 1px #3f3d3d;
+    }
+  }
+
+  .hotel-information-section {
+    @media (max-width: $screen-xs-max) {
+      .col-xs-12, col-xs-6 {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      .estimated-costs, .estimated-points {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+    .accordion-header {
+      .header-title-accordion {
+        @media (min-width: $screen-sm-min) {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .hotel-image {
+      @media (min-width: $screen-sm-min) {
+        padding-right: 15px;
+      }
+    }
+    .hotel-info {
+      @media (max-width: $screen-xs-max) {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      @media (min-width: $screen-sm-min) {
+        padding-left: 0px;
+
+      }
+
+      .brand-name {
+        @media (min-width: $screen-sm-min) {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .event-info-section {
+    .event {
+      margin-bottom: 40px;
+      padding: 0;
+      @media (min-width: $screen-sm-min) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .back-events {
+    margin-bottom: 30px;
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .amount-info-section {
+    ul {
+      &.border-total-cost {
+        border-bottom: solid 1px #3f3d3d;
+        margin-bottom: 15px;
+      }
+      li {
+        padding: 0;
+        margin-bottom: 20px;
+        .amount-container {
+          text-align: right;
+        }
+      }
+    }
+
+    .estimated-costs {
+      .description {
+        margin-bottom: 15px;
+
+        @media(max-width: $screen-xs-max) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .estimated-points {
+      margin-top: 15px;
+      display: inline-block;
+      @media(max-width: $screen-xs-max) {
+        margin-top: 0;
+      }
+      .description {
+        margin-bottom: 30px;
+        @media(max-width: $screen-xs-max) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .add-stay-section {
+    .description-container {
+      padding: 15px 25px 50px;
+      @media (min-width: $screen-sm-min) {
+        padding: 0 0 30px 0;
+      }
+    }
+
+    .addStayForm {
+      @media(max-width: $screen-xs-max) {
+        padding-left: 25px;
+        padding-right: 25px;
+        .row {
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+        .col-xs-12 {
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+        .confirmation-form {
+          margin: 20px 0 0 0;
+        }
+      }
+      ul {
+        position: relative;
+        @media(max-width: $screen-xs-max) {
+          margin-bottom: 0;
+        }
+        position: relative;
+        li {
+          @media (min-width: $screen-sm-min) {
+            margin-bottom: 30px;
+          }
+          .form-element {
+            .error-inline-container {
+              .error-inline {
+                margin-top: 8px;
+              }
+            }
+            label {
+              margin-bottom: 5px;
+            }
+          }
+          .controls {
+            margin-top: -24px;
+            float: right;
+            @media(max-width: $screen-xs-max) {
+              margin-top: 0;
+            }
+            .add-remove-stay {
+              display: table-cell;
+              vertical-align: bottom;
+              padding-right: 23px;
+              @media(max-width: $screen-xs-max) {
+                height: auto;
+                margin-bottom: 30px;
+                margin-top: 30px;
+                display: block;
+              }
+              @media(min-width: $screen-desktop) {
+                padding: 0 25px;
+              }
+            }
+          }
+        }
+      }
+      .stays-check {
+        .inputContainer {
+          display: flex;
+          .inputItem {
+            margin-right: 15px;
+            .refineCheckInput-hidden {
+              display: none;
+            }
+          }
+          .textItem {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            -ms-flex-negative: 1;
+            flex-shrink: 1;
+            overflow: hidden;
+            word-wrap: break-word;
+          }
+        }
+        .brandCheckBoxIcon {
+          border: solid 1px $ihg-mango2;
+          font-size: .62em;
+          width: 32px;
+          height: 32px;
+          .brandCheckBox {
+            color: transparent;
+          }
+          i {
+            width: 30px;
+            height: 30px;
+            &.brandCheckMark-color {
+              .filterCheckboxRect {
+                fill: $ihg-mango2;
+              }
+            }
+          }
+        }
+        .error-inline-container {
+          .error-inline {
+            margin-top: 3px;
+          }
+        }
+      }
+
+      .save-container {
+        .save-button {
+          width: 100%;
+        }
+        @media(max-width: $screen-xs-max) {
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          .save-button {
+            width: 90%;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Membership Materials container & component
+//  ----------------------------------------
+.materials-container {
+  @extend .page-container;
+
+  padding-bottom: 87px !important;
+
+  .title {
+    margin-bottom: -5px;
+  }
+
+  .svgcard {
+    fill: #ffffff;
+    visibility: hidden;
+  }
+
+  @media print {
+
+    *.svgcard {
+      visibility: visible !important;
+    }
+    *.card-container-multiple {
+      width: 324px;
+      height: 209.406px;
+      margin-left: 20px !important;
+    }
+    *.card-container {
+      width: 324px;
+      height: 209.406px;
+      margin-left: 20px !important;
+    }
+    *.member-name-pc {
+      font-size: 32px;
+      font-family: "HCo Chronicle Display";
+      font-style: italic;
+      line-height: 1em;
+      margin-left: 0px !important;
+    }
+    *.member-name-br {
+      font-size: 32px;
+      font-family: "HCo Chronicle Display";
+      font-style: italic;
+      line-height: 1em;
+      margin-left: 0px !important;
+    }
+    *.member-name-kar {
+      font-size: 12px;
+      font-family: "Proxima Nova";
+      margin-left: 0 !important;
+    }
+    *.member-name-amb {
+      font-size: 32px;
+      font-family: "GillSans Light";
+      line-height: 1em;
+      margin-left: 0px !important;
+    }
+    *.member-number-pc {
+      font-size: 12px;
+      font-family: "HCo Chronicle Display";
+      line-height: 1em;
+      margin-top: 16px;
+    }
+    *.member-number-br {
+      font-size: 12px;
+      font-family: "HCo Chronicle Display";
+      margin-top: 16px;
+    }
+    *.member-number-amb {
+      font-size: 12px;
+      font-family: "GillSans Light";
+      line-height: 1em;
+    }
+    *.exp-date-amb {
+      font-family: "GillSans Light";
+      left: 6% !important;
+      margin-left: 0px !important;
+      font-size: 8px;
+    }
+  }
+
+  .row.p-top {
+    padding-top: 25px;
+
+    @media (min-width: $screen-sm-min) {
+      padding-top: 40px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      padding-top: 50px;
+    }
+  }
+
+  .description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 23px;
+    padding-bottom: 25px;
+
+    @media (min-width: $screen-sm-min) {
+      padding-top: 21px;
+      padding-bottom: 25px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      padding-top: 38px;
+      padding-bottom: 25px;
+    }
+  }
+
+  .description-amb {
+    padding-bottom: 25px;
+    @media (min-width: $screen-sm-min) {
+      padding-top: 22px;
+      padding-bottom: 22px;
+    }
+    @media (min-width: $screen-md-min) {
+      padding-top: 39px;
+      padding-bottom: 17px;
+    }
+    @media (min-width: $screen-lg-min) {
+      padding-bottom: 16px;
+    }
+  }
+
+  .buttons-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    @media (min-width: $screen-sm-min) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+    @media (min-width: $screen-md-min) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+
+  .center {
+    float: none;
+    margin: 0 auto
+  }
+
+  img.center {
+    @extend .center;
+  }
+
+  a.carousel-control {
+    display: none;
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
+  }
+
+  .carousel-indicators {
+    li {
+      margin-right: 5px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .carousel-control > span.glyphicon {
+    top: 146px;
+    @media (min-width: $screen-md-min) {
+      top: 137px;
+    }
+    @media (min-width: $screen-lg-min) {
+      top: 175px;
+    }
+  }
+
+  .card {
+    position: relative;
+  }
+
+  .card-container-multiple {
+    @media (max-width: $screen-xs-max) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  .member-name-pc {
+    @extend .club-name-card;
+    top: 10px;
+    left: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: absolute;
+
+    @media (min-width: $screen-sm-min) {
+      top: 16px;
+      left: 10px;
+      font-size: 28px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      top: 22px;
+      left: 16px;
+      font-size: 36px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      top: 28px;
+      left: 16px;
+      font-size: 42px;
+    }
+  }
+
+  .member-name-br {
+    @extend .club-name-card;
+    top: 10px;
+    left: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: absolute;
+
+    @media (min-width: $screen-sm-min) {
+      top: 16px;
+      left: 10px;
+      font-size: 28px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      top: 22px;
+      left: 16px;
+      font-size: 36px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      top: 28px;
+      left: 16px;
+      font-size: 42px;
+    }
+  }
+
+  .member-name-amb {
+    @extend .amb-name-card;
+    top: 30%;
+    position: absolute;
+    left: 5%;
+    padding-left: 15px;
+
+    @media (min-width: $screen-sm-min) {
+      top: 27%;
+      left: 4.5%;
+    }
+
+    &.padding {
+      padding-top: 22px;
+
+      @media (min-width: $screen-sm-min) {
+        padding-top: 43px;
+      }
+
+      @media (min-width: $screen-md-min) {
+        padding-top: 45px;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        padding-top: 49px;
+      }
+    }
+  }
+
+  .member-name-kar {
+    @extend .kar-name-card;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.25em;
+    width: 90%;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .exp-date-kar {
+    @extend .kar-exp-date;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    top: 76%;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .exp-date-amb {
+    @extend .amb-exp-date;
+    position: absolute;
+    padding-left: 0px;
+    left: 5%;
+    top: 84%;
+    font-size: 8px;
+
+    @media (min-width: $screen-sm-min) {
+      padding-left: 15px;
+      font-size: 12px;
+    }
+  }
+
+  .p-left-off {
+    @media (max-width: $screen-xs-max) {
+      padding-left: 0px !important;
+    }
+  }
+
+  .member-number-pc {
+    margin-top: 12px;
+    color: $white;
+    line-height: 1em;
+    font-size: 16px;
+    font-weight: 300;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    @media (min-width: $screen-md-min) {
+      margin-top: 14px;
+      font-weight: 300;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      margin-top: 16px;
+    }
+  }
+
+  .member-number-br {
+    margin-top: 12px;
+    color: $white;
+    line-height: 1em;
+    font-size: 16px;
+    font-weight: 300;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    @media (min-width: $screen-md-min) {
+      margin-top: 14px;
+      font-weight: 300;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      margin-top: 16px;
+    }
+  }
+
+  .member-number-kar {
+    @extend .kar-number-card;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    top: 70%;
+    left: 0;
+    right: 0;
+    display: block;
+  }
+
+  .member-number-amb {
+    @extend .amb-number-card;
+    position: absolute;
+    left: 35%;
+    padding-left: 15px;
+    top: 76%;
+
+    @media (min-width: $screen-sm-min) {
+      left: 32%;
+      top: 76%;
+    }
+    @media (min-width: $screen-md-min) {
+      top: 75%;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      left: 32.8%;
+    }
+  }
+
+  // Download app section
+  .download-app-container {
+    margin: 0px -20px 25px -20px;
+
+    @media (min-width: $screen-sm-min) {
+      margin: -5px -20px 25px -20px;
+    }
+
+    .download-app-portlet {
+      @extend .base-portlet;
+      @extend .background-white;
+      @media (min-width: $screen-sm-min) {
+        margin-left: -5px;
+        margin-right: -5px;
+      }
+    }
+
+    .title {
+      margin-bottom: 15px;
+      @media (min-width: $screen-sm-min) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    }
+
+    .button {
+      margin-bottom: 3px;
+      @media (min-width: $screen-sm-min) {
+        margin-top: 3px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Order Card container & component
+//  ----------------------------------------
+.order-card-container {
+  @extend .materials-container;
+
+  .print-card-link {
+    display: inline;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .mailing-address-box {
+    margin-left: -$page-margin-xs;
+    margin-right: -$page-margin-xs;
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .header-title {
+      margin: 10px $page-margin-xs 10px;
+    }
+  }
+
+  .message-info {
+    @include flex-container;
+
+    background: $neutral-gray3;
+    align-items: center;
+    margin: 20px;
+    margin-left: -$page-margin-xs;
+    margin-right: -$page-margin-xs;
+    margin-bottom: 12px;
+    margin-top: 30px;
+    padding: 15px $page-margin-xs 35px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-bottom: 45px;
+    }
+
+    .message-icon {
+      display: flex;
+      align-self: flex-start;
+
+      margin-right: 10px;
+      min-height: 30px;
+      max-height: 30px;
+      min-width: 30px;
+      max-width: 30px;
+      background-image: $icon-alert;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  button {
+    @media (min-width: $screen-sm-min) {
+      width: ceil(percentage(4 / $grid-columns));
+    }
+  }
+
+  .spacer {
+    padding-bottom: 55px;
+  }
+
+  .error-info-box {
+    @media (max-width: $screen-xs-max) {
+      margin-top: 17px;
+    }
+  }
+}
+
+//  ----------------------------------------
+// Card art
+//  ----------------------------------------
+.card-rc-club {
+  @include materials_card($card-rc-club);
+}
+
+.card-rc-gold {
+  @include materials_card($card-rc-gold);
+}
+
+.card-rc-platinum {
+  @include materials_card($card-rc-platinum);
+
+}
+
+.card-rc-spire {
+  @include materials_card($card-rc-spire);
+}
+
+.card-br-club {
+  @include materials_card($card-br-club);
+}
+
+.card-br-gold {
+  @include materials_card($card-br-gold);
+}
+
+.card-br-platinum {
+  @include materials_card($card-br-platinum);
+}
+
+.card-br-spire {
+  @include materials_card($card-br-spire);
+}
+
+.card-kar-spire {
+  @include materials_card($card-kar-spire);
+}
+
+.card-amb-gold {
+  @include materials_card($card-amb-gold);
+}
+
+.card-amb-platinum {
+  @include materials_card($card-amb-platinum);
+}
+
+.card-amb-spire {
+  @include materials_card($card-amb-spire);
+}
+
+.card-amb-royal {
+  @include materials_card($card-amb-royal);
+}
+
+//  ----------------------------------------
+// End of card art
+//  ----------------------------------------
+
+.multiple-cards-container {
+  padding-bottom: 135px !important;
+}
+
+.carousel-inner {
+  height: auto;
+
+  @media (min-width: $screen-sm-min) {
+    height: 365px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    height: 425px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    height: 490px;
+  }
+}
+
+.carousel-inner > .right-pos {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  opacity: .4;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  top: -4px;
+  left: 5%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0.8) translate3d(25%, 0px, 0px) perspective(1500px) rotateY(-30deg); /* Chrome, Safari, Opera  */
+  transform: scale(0.8) translate3d(25%, 0px, 0px) perspective(1500px) rotateY(-30deg);
+  display: block;
+
+  @media (min-width: $screen-sm-min) {
+    top: -4px;
+    left: -25px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    top: -8px;
+    left: -11px;
+  }
+}
+
+.carousel-inner > .main-pos {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition-delay: 0s; /* Safari */
+  transition-delay: 0s;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: block
+}
+
+.carousel-inner > .left-pos {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  opacity: .4;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  top: -4px;
+  left: -5%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0.8) translate3d(-25%, 0px, 0px) perspective(1500px) rotateY(30deg); /* Chrome, Safari, Opera  */
+  transform: scale(0.8) translate3d(-25%, 0px, 0px) perspective(1500px) rotateY(30deg);
+  display: block;
+
+  @media (min-width: $screen-sm-min) {
+    top: -4px;
+    left: 25px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    top: -8px;
+    left: 11px;
+  }
+}
+
+.carousel-inner > .back-pos {
+  position: absolute;
+  overflow: hidden;
+  opacity: .01;
+  z-index: -2;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  transform: scale(.10);
+  -webkit-transform: scale(.10);
+  -moz-transform: scale(.10);
+  transform: scale(.10);
+  display: block;
+}
+
+//  ----------------------------------------
+//  Free Nights container & component
+//  ----------------------------------------
+.free-nights-container {
+
+  padding-bottom: 70px !important;
+
+  @media print {
+    .col-sm-6 {
+      width: 100%;
+    }
+  }
+
+  .free-nights-header {
+    @extend .p-view;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: 35px;
+      margin-bottom: 25px;
+    }
+
+    .print-view {
+      @include icon(30px, 27px);
+      background-image: $icon-print;
+      display: inline-flex;
+      align-self: center;
+    }
+  }
+
+  .message-info {
+    @include flex-container;
+
+    @media (min-width: $screen-sm-min) {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 17px;
+    }
+
+    background: $neutral-gray3;
+    align-items: center;
+    margin: -7px -20px 12px;
+    padding: 15px 20px 35px;
+    .message-icon {
+      color: $rbf-dark-gray;
+      margin-right: 10px;
+      min-width: 30px;
+      display: flex;
+      align-self: flex-start;
+    }
+  }
+
+  .free-nights-available {
+    @extend .p-view;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media(min-width: $screen-sm-min) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .free-nights-grid {
+
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    @media (min-width: $screen-sm-min) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .free-nights-portlet {
+      @extend .base-portlet;
+      @extend .background-white;
+
+      @media print {
+        border-bottom: none !important;
+      }
+
+      margin-bottom: 20px;
+
+      @media (min-width: $screen-sm-min) {
+        padding-top: 28px !important;
+        margin-bottom: 30px;
+      }
+
+      .offer-container {
+        border: 1px solid $ihg-mango2;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        margin-bottom: 15px;
+
+        @media print {
+          border: 1px solid $rbf-dark-gray;
+          width: 30%;
+        }
+
+        @media (min-width: $screen-sm-min) {
+          padding-top: 25px;
+          padding-bottom: 25px;
+        }
+
+        .offer-title {
+          margin-bottom: 15px;
+          @media (min-width: $screen-sm-min) {
+            margin-bottom: 20px;
+          }
+        }
+
+        .book-free-night {
+          margin-bottom: 15px;
+          @media (min-width: $screen-sm-min) {
+            margin-bottom: 28px;
+          }
+        }
+      }
+      .view-details {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Dashboard
+//  ----------------------------------------
+.dashboard-container {
+  flex-direction: column;
+
+  .cta-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .component-container {
+    background-color: $white;
+    border-bottom: solid 1px $rbf-dark-gray;
+
+    .align-container {
+      padding: 15px 20px 10px;
+
+      @media (min-width: $screen-sm-min) {
+        padding: 15px 30px 10px;
+      }
+    }
+  }
+
+  .view-header {
+    .member-info {
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: $screen-sm-min) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .member-level-info {
+        min-width: 33%;
+      }
+    }
+  }
+
+  .dynamic-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @extend .dynamic-cols;
+
+    .dashboard-slot-button {
+      width: 100%;
+    }
+
+    .right-side,
+    .col-right {
+      .dashboard-slot-button {
+        @media (min-width: $screen-md-min) {
+          width: 50%;
+        }
+      }
+    }
+
+    .component-order-2 {
+      order: 2;
+    }
+
+    .component-order-4 {
+      order: 4;
+    }
+
+    .component-points-tracker {
+      order: 1;
+      points-tracker {
+        width: 100%;
+      }
+    }
+
+    .component-upcoming-stay {
+      order: 1;
+      upcoming-stay {
+        width: 100%;
+        .confirmationNumber{
+          color: $ihg-mango;
+          text-decoration: underline;
+        }
+        .brandLogoContainer{
+          float: left;
+          padding-left: 15px;
+          .hotel-brand-logo{
+            height: 40px;
+            width: 40px;
+            @media (min-width: $screen-md-min) {
+              height: 70px;
+              width: 70px;
+            }
+          }
+        }
+        .hotel-summary{
+          .brand-name{
+            display: block;
+          }
+          .location {
+            .hotel-address {
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+
+              span:nth-last-child(-n+3) {
+                margin-left: 4px;
+              }
+              .fa-update {
+                margin-bottom: 5px;
+                margin-left: -4px;
+                svg {
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+            }
+          }
+          .location-gc {
+            cursor: default;
+            text-decoration: none;
+          }
+        }
+        .frontDeskPhone {
+          display: flex;
+          flex-direction: column;
+          @media (min-width: $screen-sm-min) {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+
+    .component-spire-elite {
+      order: 3;
+      spire {
+        width: 100%;
+
+        .spire-img-container {
+          overflow: hidden;
+          width: 100%;
+
+          .spire-card-img {
+            margin: 0 auto;
+          }
+        }
+
+        .spire-benefits {
+          text-align: center;
+        }
+      }
+
+      &.right-side {
+        @media (min-width: $screen-sm-min) {
+          .spire-card-img {
+            width: 40%;
+          }
+        }
+      }
+
+      &.col-left {
+        .spire-card-img {
+          width: 80%;
+        }
+      }
+    }
+
+    .component-hotel-reviews {
+      order: 4;
+      &.right-side {
+        hotel-review {
+          .button-container {
+            @extend .align-container;
+            padding: 15px 20px 10px;
+
+            @media (min-width: $screen-md-min) {
+              padding: 20px calc(#{percentage((7 / $grid-columns))} + #{$grid-gutter-width}) 10px 30px;
+            }
+          }
+        }
+      }
+
+      &.col-left {
+        hotel-review {
+          .button-container {
+            padding: 15px 20px 10px;
+          }
+        }
+      }
+
+      hotel-review {
+        width: 100%;
+
+        .imgage-source {
+          position: relative;
+        }
+
+        .image-label1 {
+          position: absolute;
+          top: 10px;
+          left: $page-margin-xs;
+          width: 65%;
+
+          @media (min-width: $screen-md-min) {
+            top: 10px;
+            width: 50%;
+          }
+        }
+
+        .image-label2 {
+          position: absolute;
+          top: 50px;
+          left: $page-margin-xs;
+          width: 65%;
+          @media (min-width: $screen-md-min) {
+            top: 60px;
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    .component-mobile-app {
+      order: 5;
+
+      &.col-all {
+        ui-slot > .ui-slot-container > .p-slot-container > .generic-tile > .content.relative-style {
+          @media (max-width: $screen-xs-max) {
+            .tile-desc {
+              .link {
+                padding: 0 20px;
+                width: 100%;
+
+                a {
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+          @media (min-width: $screen-sm-min) {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin: 30px 0px;
+
+            .tile-image {
+              margin: 0px 30px;
+            }
+
+            .tile-desc {
+              margin-bottom: 0px;
+              margin-right: 20px;
+              .tile-header, .desc, .link {
+                text-align: left;
+              }
+
+              .desc {
+                margin-bottom: 18px;
+              }
+
+              .link {
+                align-self: flex-start;
+              }
+            }
+          }
+        }
+      }
+
+      &.right-side, &.col-right {
+        ui-slot > .ui-slot-container > .p-slot-container > .generic-tile > .content.relative-style {
+
+          @media (max-width: $screen-sm-max) {
+            .tile-desc {
+              .link {
+                padding: 0 20px;
+                width: 100%;
+
+                a {
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+          @media (min-width: $screen-md-min) {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin: 30px 0px;
+
+            .tile-image {
+              margin: 0px 30px;
+            }
+
+            .tile-desc {
+              margin-bottom: 0px;
+
+              .tile-header, .desc, .link {
+                text-align: left;
+              }
+
+              .desc {
+                margin-bottom: 18px;
+              }
+
+              .link {
+                align-self: flex-start;
+              }
+            }
+          }
+        }
+      }
+
+      &.col-right {
+        margin-bottom: auto;
+      }
+    }
+
+    .component-ambassador-benefit {
+      order: 2;
+      ambassador-benefit {
+        width: 100%;
+      }
+    }
+
+    .component-redeem-field {
+      redeem-field {
+        .redeem-container {
+          width: 100%;
+          height: 95px;
+          border: 1px solid $rbf-medium-gray;
+          padding: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &__label {
+            width: 50%;
+            letter-spacing: .018em;
+            font-family: $graphik_font_family;
+            font-size: 16px;
+          }
+          &__cta {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .redeem-btn {
+              width: 100%;
+            }
+          }
+        }
+        @media(max-width: $screen-sm-max) {
+          .redeem-container {
+            height: 125px;
+            justify-content: space-around;
+            flex-direction: column;
+            padding: 10px;
+
+            &__label {
+              width: 80%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-direction: column;
+            }
+            &__cta {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+
+    .component-interact-slot {
+      height: 200px;
+      background-color: yellowgreen;
+      color: white;
+      order: 7;
+    }
+  }
+
+  .view-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @extend .dynamic-cols;
+
+    .need-help-container {
+      @extend .component-container;
+      width: 100%;
+      padding-right: 30px;
+    }
+  }
+
+  //  ----------------------------------------
+  //  Points tracker component
+  //  ----------------------------------------
+  .points-tracker-container {
+    @extend .component-container;
+
+    .local-nav-container {
+      @extend .flex-container;
+      flex-flow: row wrap;
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      .fa-bell-o {
+        svg {
+          margin-left: 5px;
+          margin-top: 2px;
+        }
+      }
+
+      .local-nav-left, .local-nav-right {
+        @extend .flex-container;
+        @extend .content-center;
+        @extend .cross-center;
+        @extend .text-center;
+        padding: 15px 30px;
+        margin-bottom: 1px;
+        background-color: $rbf-dark-gray;
+        width: calc(50% - 1px);
+        height: 58px;
+      }
+
+      .local-nav-left {
+        margin-right: 1px;
+      }
+
+      .local-nav-right {
+        margin-left: 1px;
+      }
+    }
+  }
+}
+//  ----------------------------------------
+//  Edit Password Component
+//  ----------------------------------------
+
+edit-password {
+  .edit-password {
+    .field-message {
+      margin-top: 5px;
+      span {
+        font-family: $graphik_font_family;
+        font-size: 14px;
+        color: $red-error;
+        margin-top: 5px;
+      }
+    }
+    .form-element {
+      .has-error {
+        border: 1px solid $red-error;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Earning Summary
+//  ----------------------------------------
+.earning-summary {
+  ngb-accordion {
+    .rollOverPanelHeader {
+      text-align: right;
+    }
+    .accordion-body {
+      display: flex;
+      flex-direction: column;
+      div {
+        align-self: flex-end;
+      }
+      .infobox-how-name {
+        align-self: stretch !important;
+      }
+    }
+  }
+  .component-background {
+    background-color: #fff;
+    border-bottom: solid 1px #3f3d3d;
+
+    .level-detail {
+      display: flex;
+    }
+  }
+
+  .sm-row {
+    @media (min-width: $screen-sm-min) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-top: 10px;
+    }
+  }
+
+  .sm-width {
+    @media (min-width: $screen-sm-min) {
+      width: 57%;
+    }
+  }
+
+  .md-width {
+    width: 100%;
+    @media (min-width: $screen-sm-min) {
+      width: 66%;
+    }
+  }
+
+  .sm-width-cta {
+    @media (min-width: $screen-sm-min) {
+      width: 38%;
+      margin-left: 5%;
+    }
+  }
+
+  .sm-margin {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    @media (min-width: $screen-sm-min) {
+      margin-left: 15px;
+      margin-right: 10px;
+    }
+  }
+
+  .qualifying-balance {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+    .level-code {
+      padding-right: 20px;
+      width: 33%;
+
+      @media (min-width: $screen-sm-min) {
+        width: 25%;
+      }
+    }
+
+    .level-description {
+      width: 57%;
+      @media (min-width: $screen-sm-min) {
+        width: 65%;
+      }
+      .body-small-less-letter-space {
+        @extend .body-small;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .level-caret {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 10%;
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Payment Information
+//  ----------------------------------------
+.payment-container {
+  .slot-container {
+    border-bottom: solid 1px $rbf-dark-gray;
+    display: flex;
+    justify-content: center;
+
+    ui-slot {
+      padding: 0 10%;
+
+      .ui-slot-container {
+        border-bottom: none;
+
+        .p-slot-container {
+          padding-top: 30px
+        }
+      }
+      .wrapSlots {
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+//  ----------------------------------------
+//  Stay Preferences
+//  ----------------------------------------
+.stay-preferences {
+  .intro-notes {
+    border: none;
+  }
+  .preference-form {
+    width: 100%;
+  }
+}
+
+//  ----------------------------------------
+//  Next Level Tracker
+//  ----------------------------------------
+.next-level-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+  .next-level-points {
+    width: 45%;
+    position: relative;
+    display: inline-block;
+  }
+
+  .club {
+    stroke: $color-club;
+  }
+
+  .gold {
+    stroke: $color-gold-elite;
+  }
+
+  .pltn {
+    stroke: $color-platinum-elite;
+  }
+
+  .spre {
+    stroke: $color-spire-elite;
+  }
+
+  .center-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .next-level-nights {
+    width: 45%;
+    position: relative;
+    display: inline-block;
+  }
+
+  .next-level-points, .next-level-nights {
+    .text-description {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      text-align: center;
+    }
+  }
+
+  .svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+//  ----------------------------------------
+//  My Messages
+//  ----------------------------------------
+.my-messages-container {
+  .title {
+    margin-bottom: 2px;
+  }
+}
+
+//  ----------------------------------------
+//  Level Messages
+//  ----------------------------------------
+.dashboard-view-level-message {
+  display: flex;
+  flex-direction: column;
+  @extend .text-center;
+}
+
+.center-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.error-info-box {
+  margin: 0;
+}

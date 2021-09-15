@@ -1,0 +1,25 @@
+/**
+ * _bootstrap-sass.scss 12/08/2016 //(C) IHG. All rights reserved.
+ * Entry point to override Bootstrap
+ */
+
+//# It's multiplied by 2 because value is divided by two (left and right) in bootstrap.
+$page-gutter-width: ($page-margin-xs * 2);
+
+// ------------------------------------------------------------------------------------
+// Bootstrap overrides
+// ------------------------------------------------------------------------------------
+
+$icon-font-path: "/cdn/vendor/ihgfonts/v1.0.0/";
+
+$line-height-computed: 0;
+
+@import "bootstrap-sass/bootstrap";
+@import "bootstrap-overrides";
+
+//  --------------------------
+
+$grid-columns-half: ($grid-columns / 2);
+
+$padding-left: ceil(($grid-gutter-width / 2));
+$padding-right: floor(($grid-gutter-width / 2));

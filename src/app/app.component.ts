@@ -1,7 +1,7 @@
 import { Component, ComponentFactoryResolver, ViewChild, AfterViewInit, OnInit, Input } from '@angular/core';
 import { ViewContainerRef } from '@angular/core';
-import { WalletViewComponent } from './wallet-view/wallet-view.component';
-import { ChoiceViewComponent } from './choice-view/choice-view.component';
+import { WalletViewComponent } from './views/wallet-view/wallet-view.component';
+import { ChoiceViewComponent } from './views/choice-view/choice-view.component';
 
 @Component({
   selector: 'custom-root',
@@ -23,7 +23,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 
   ngOnInit(): void {
-    //this.view = 'wallet'
+      this.view = 'choice'
   }
 
 
@@ -33,6 +33,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     const ref = this.myRef.createComponent(factory);
     ref.changeDetectorRef.detectChanges();
     ref.instance.data = this.data;
+    ref.instance.view = this.view;
   }
 
 

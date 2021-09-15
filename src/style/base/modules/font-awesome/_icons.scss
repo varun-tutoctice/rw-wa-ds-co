@@ -1,0 +1,31 @@
+.#{$fa-css-prefix}-bell-o > svg {
+  width: 12px;
+  height: 12px;
+  fill: $white;
+}
+.#{$fa-css-prefix}-circle-o-notch {
+  & svg {
+    @extend .fa-spin;
+    width: 90px;
+    height: 70px;
+    stroke-width: 20px;
+  }
+}
+.#{$fa-css-prefix}-map-marker {
+  & svg {
+    height: 20px;
+  }
+}
+.#{$fa-css-prefix}-circle-thin {
+  & svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+.#{$fa-css-prefix}-exclamation {
+  top: 4px;
+  & svg {
+    width: 14px;
+    height: 14px;
+  }
+}

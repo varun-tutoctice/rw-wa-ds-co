@@ -1,0 +1,11 @@
+/*! _page-container.scss  12/08/2016  //(C) IHG. All rights reserved. */
+
+.page-container {
+  padding-bottom: 60px;
+
+  .page-header {
+    @include page-header($margins-xs: 15px 0 15px 10px);
+
+    @include header-icon(20px, 20px, $icon-arrow-back);
+  }
+}

@@ -1,0 +1,196 @@
+/*! _spire_elite.scss 08/31/2017  //(C) IHG. All rights reserved. */
+
+.spire-elite {
+
+  .hertz-logo-box,
+  .spire-elite-card-box {
+    width: percentage((3.5 / $grid-columns));
+  }
+
+  .hertz-logo-box,
+  .spire-elite-card-box,
+  .close-button-box,
+  .expired-redeemed-button-box {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hertz-logo-box,
+  .spire-elite-card-box,
+  .close-button-box {
+    margin-top: 0;
+  }
+
+  .hertz-logo-box > img {
+    width: 100%;
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .hertz-logo-box {
+      width: percentage((1.5 / $grid-columns));
+    }
+    .spire-elite-card-box,
+    .close-button-box,
+    .benefit-select-button {
+      width: percentage((2.5 / $grid-columns));
+    }
+    .expired-redeemed-button-box {
+      width: percentage((5.5 / $grid-columns));
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .close-button-box,
+    .benefit-select-button {
+      width: percentage((3.5 / $grid-columns));
+    }
+    .expired-redeemed-button-box {
+      width: percentage((4.5 / $grid-columns));
+    }
+  }
+
+}
+
+.spire-hertz-upgrade,
+.spire-hertz-benefit,
+.spire-redeem-points,
+.spire-gift-platinum,
+.spire-choice-benefits,
+.spire-expired-redeemed {
+  border-bottom: solid 1px $rbf-dark-gray;
+}
+
+.spire-choice-benefits {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.spire-redeem-points {
+
+  input[type="checkbox"]:not(:checked),
+  input[type="checkbox"]:checked {
+    cursor: pointer;
+
+    & + label {
+      cursor: pointer;
+    }
+  }
+
+  /* checkbox aspect */
+  input[type="checkbox"]:not(:checked) + label:before,
+  input[type="checkbox"]:checked + label:before {
+    content: '';
+    color: $white;
+    background-color: $white;
+    border: 0;
+  }
+
+  input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    z-index: 100;
+  }
+
+  label {
+    margin-bottom: 0;
+  }
+
+  .parent-checkbox {
+    min-width: 45px;
+    max-width: 45px;
+    padding-top: 4px;
+  }
+
+  .svg-checkbox {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    color: $ihg-mango;
+
+    left: 0;
+    top: 4px;
+
+    svg {
+      width: 100%;
+      height: auto;
+
+      rect {
+        stroke: $rbf-dark-gray;
+        stroke-width: 10;
+      }
+    }
+
+    .filterCheckbox {
+      stroke: white;
+      fill: none;
+    }
+
+  }
+
+  .checked {
+    fill: $ihg-mango;
+  }
+  .unchecked {
+    fill: $white;
+  }
+
+}
+
+.spire-hertz-upgrade,
+.spire-redeem-points,
+.spire-gift-platinum {
+
+  .hz-input-grid .xs-col-12:nth-child(n) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .upgrade-button-box,
+  .redeem-button-box {
+    width: percentage((6.5 / $grid-columns));
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .upgrade-button-box,
+    .redeem-button-box {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .hz-input-grid .sm-col-6-sm {
+      &:nth-child(2n+1) {
+        order: 1;
+      }
+      &:nth-child(2n+2) {
+        order: 2;
+      }
+      &:nth-child(-n+2) {
+        padding-right: $padding-right;
+      }
+      &:nth-child(n+3) {
+        padding-left: $padding-left;
+      }
+    }
+    .upgrade-button-box,
+    .redeem-button-box {
+      text-align: left;
+      padding-left: $padding-left;
+      .hertz-upgrade-button,
+      .redeem-points-button,
+      .redeem-platinum-button {
+        width: percentage((5.25 / $grid-columns-half));
+      }
+    }
+  }
+
+}
+
+.spire-expired-redeemed {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .spire-elite-card-box {
+      width: percentage((1.5 / $grid-columns));
+    }
+  }
+}

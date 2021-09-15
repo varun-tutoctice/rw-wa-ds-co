@@ -1,0 +1,101 @@
+/*!
+ * _flex-layout.scss 05/04/2017  //(C) IHG. All rights reserved.
+ */
+
+//  ---------------------------------------------------------------------------
+//  Flex Container  ( parent properties )
+//  ---------------------------------------------------------------------------
+
+.flex-container {
+  @include flex-container;
+
+  &.space-between {
+    justify-content: space-between;
+  }
+
+  &.content-end {
+    justify-content: flex-end;
+  }
+
+  &.content-center {
+    justify-content: center;
+  }
+
+  &.cross-center {
+    align-items: center;
+  }
+
+  &.cross-baseline {
+    align-items: baseline;
+  }
+
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+//  ------------------------------------
+
+.equalHW {
+  flex: 1 1 0 !important;
+}
+
+//  ---------------------------------------------------------------------------
+//  Flex Grid
+//  ---------------------------------------------------------------------------
+//
+//  Common component used on: Spire Elite
+
+.flexrow,
+.flexwrap {
+  @include flex-container;
+  flex-wrap: wrap;
+}
+
+@include make-flexgrid-columns;
+
+@include make-flexgrid(xs);
+
+@media (min-width: $screen-sm-min) {
+  @include make-flexgrid(sm);
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  @include make-flexgrid(sm, sm);
+}
+
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) and (min-width: $screen-sm-min) {
+  @include make-flexgrid-ie(sm);
+}
+
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  @include make-flexgrid-ie(sm, sm);
+}
+
+@media (min-width: $screen-md-min) {
+  @include make-flexgrid(md);
+}
+
+.flexrow,
+.flexwrap {
+
+  @media (min-width: $screen-sm-min) {
+    //adds extra space to meet the margin of viewport specs
+    &.sm-p-view {
+      padding-left: $page-margin-xs - $padding-left;
+      padding-right: $page-margin-xs - $padding-right;
+    }
+  }
+
+}
+
+//  ---------------------------------------------------------------------------

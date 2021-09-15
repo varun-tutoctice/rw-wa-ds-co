@@ -1,14 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { WalletViewComponent } from './wallet-view/wallet-view.component';
-import { ChoiceViewComponent } from './choice-view/choice-view.component';
+import { WalletViewComponent } from './views/wallet-view/wallet-view.component';
+
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        ChoiceViewComponent,
         WalletViewComponent
       ],
     }).compileComponents();

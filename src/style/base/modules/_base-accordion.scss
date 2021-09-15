@@ -1,0 +1,29 @@
+/**
+ * _base-accordion.scss 12/08/2016 //(C) IHG. All rights reserved.
+ */
+
+.base-accordion {
+  .accordion-header, .accordion-header-active {
+    @include header-icon;
+
+    .accordion-collapse {
+      background-image: $icon-collapse;
+    }
+
+    .accordion-expand {
+      background-image: $icon-expand;
+    }
+  }
+
+  .accordion-header {
+    @include accordion-header($mute-toggle: true, $justify-content: space-between);
+  }
+
+  .accordion-header-active {
+    @include accordion-header($mute-toggle: false, $justify-content: space-between);
+  }
+
+  .t2-sub {
+    color: inherit;
+  }
+}

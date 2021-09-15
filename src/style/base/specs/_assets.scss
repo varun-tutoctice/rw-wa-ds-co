@@ -1,0 +1,39 @@
+/**
+ * _assets.scss 12/09/2016 //(C) IHG. All rights reserved.
+ * Rewards Club - Assets
+ */
+
+$fonts-path: "/cdn/vendor/ihgfonts/v1.0.0";
+$icons-path: "/cdn/vendor/ihgimages/v1.0.0";
+$cards-path: "#{$icons-path}/cards";
+
+$icon-collapse: url("#{$icons-path}/icon-collapse-account.svg");
+$icon-expand: url("#{$icons-path}/icon-expand-account.svg");
+$icon-arrow-back: url("#{$icons-path}/icon-arrow-back.svg");
+$icon-arrow-back-black: url("#{$icons-path}/icon-arrow-back-black.svg");
+$icon-close: url("#{$icons-path}/icon-close.svg");
+$icon-email: url("#{$icons-path}/icon_email.svg");
+$icon-print: url("#{$icons-path}/icon_print-account.svg");
+$icon-chevron-right: url("#{$icons-path}/icon-right-chevron.svg");
+$icon-chevron-right-bold: url("#{$icons-path}/icon-right-chevron-bold.svg");
+$icon-alert: url("#{$icons-path}/icon-alert.svg");
+$icon-query: url("#{$icons-path}/icon-query.svg");
+$icon-checkmark: "#{$icons-path}/icon_checkmark.svg";
+$icon-no-image: url("#{$icons-path}/icon_noImage-account.svg");
+
+$card-rc-club: "#{$cards-path}/rc-club.svg";
+$card-rc-gold: "#{$cards-path}/rc-gold.svg";
+$card-rc-platinum: "#{$cards-path}/rc-platinum.svg";
+$card-rc-spire: "#{$cards-path}/rc-spire.svg";
+
+$card-br-club: "#{$cards-path}/br-club.svg";
+$card-br-gold: "#{$cards-path}/br-gold.svg";
+$card-br-platinum: "#{$cards-path}/br-platinum.svg";
+$card-br-spire: "#{$cards-path}/br-spire.svg";
+
+$card-kar-spire: "#{$cards-path}/kar-spire.svg";
+
+$card-amb-gold: "#{$cards-path}/amb-gold.svg";
+$card-amb-platinum: "#{$cards-path}/amb-platinum.svg";
+$card-amb-spire: "#{$cards-path}/amb-spire.svg";
+$card-amb-royal: "#{$cards-path}/amb-royal.svg";

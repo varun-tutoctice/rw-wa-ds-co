@@ -1,0 +1,9 @@
+@mixin materials_card($card-image) {
+  @media screen {
+    @include icon(100%, 0, $card-image);
+    background-size: cover;
+    padding: 0;
+    padding-bottom: calc(100% * 152.5 / 242.5);
+  }
+
+}

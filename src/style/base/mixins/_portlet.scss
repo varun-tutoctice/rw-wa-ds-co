@@ -1,0 +1,46 @@
+/**
+ * _portlet.scss 12/09/2016 //(C) IHG. All rights reserved.
+ */
+
+@mixin portlet($border-bottom: null) {
+  .justify-content {
+    @include flex-container;
+
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  ul li > * {
+    display: block;
+  }
+
+  .text-right {
+    .action {
+      white-space: nowrap;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .portlet-header-edit {
+    margin-bottom: 20px;
+  }
+
+  .bottom-actions {
+    margin-top: 30px;
+  }
+
+  .portlet-title,
+  .action {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+
+  @if not ($border-bottom == null) {
+    border-bottom: $border-bottom;
+  }
+}

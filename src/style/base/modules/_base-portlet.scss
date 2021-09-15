@@ -1,0 +1,24 @@
+/**
+ * _base-portlet.scss 12/08/2016 //(C) IHG. All rights reserved.
+ */
+
+.base-portlet {
+  padding: 10px $page-margin-xs 30px;
+
+  @include portlet($border-bottom: solid 1px $rbf-dark-gray);
+
+  .error-info-box {
+    margin-right: -$page-margin-xs;
+    margin-left: -$page-margin-xs;
+  }
+
+  uib-accordion {
+    width: 100%;
+  }
+
+}
+
+.subbase-portlet {
+  padding: 0;
+  width: 100%;
+}

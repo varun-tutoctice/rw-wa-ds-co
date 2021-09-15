@@ -1,0 +1,113 @@
+/*! _spacing.scss 05/04/2017  //(C) IHG. All rights reserved. */
+
+// Use only to set the view margins (left and right) followed by a .row
+.p-view {
+  padding-left: $page-margin-xs;
+  padding-right: $page-margin-xs;
+}
+
+.p-off {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.m-off {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.p-gutter {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+}
+
+.page-marging-off {
+  margin-left: -$page-margin-xs;
+  margin-right: -$page-margin-xs;
+}
+
+//  ------------------------------------
+//  Widths
+
+.w-100 {
+  width: 100% !important;
+}
+
+//  ------------------------------------------------------------------
+//  Vertical Spacing
+//  ------------------------------------------------------------------
+
+span, a {
+  &.m-top-5, &.m-top-10, &.m-top-15, &.m-top-20, &.m-top-25, &.m-top-30, &.m-top-35, &.m-top-40,
+  &.m-bottom-5, &.m-bottom-10, &.m-bottom-15, &.m-bottom-20, &.m-bottom-25, &.m-bottom-30,
+  &.m-bottom-35, &.m-bottom-40, &.m-bottom-45, &.m-bottom-50, &.m-bottom-55, &.m-bottom-60,
+  &.m-bottom-65, &.m-bottom-70, &.m-bottom-75, &.m-bottom-80, &.m-bottom-85, &.m-bottom-90 {
+    display: block;
+  }
+}
+
+@include margin-incremental("m-top-#", "margin-top", false, 40);
+
+@include margin-incremental("m-bottom-#", "margin-bottom", false, 90);
+
+@include margin-incremental("p-top-#", "padding-top", false, 50);
+
+@include margin-incremental("p-bottom-#", "padding-bottom", false, 90);
+
+//  ------------------------------------------------------------------
+//  Horizontal Spacing
+//  ------------------------------------------------------------------
+
+@include margin-incremental("m-left-#", "margin-left");
+
+@include margin-incremental("m-right-#", "margin-right");
+
+//  ------------------------------------------------------------------
+//  Breakpoints Spacing
+//  ------------------------------------------------------------------
+
+@media (max-width: $screen-xs-max) {
+  .m-vp-xs {
+    margin-left: -#{$page-margin-xs};
+    margin-right: -#{$page-margin-xs};
+  }
+  .p-view-xs {
+    padding-left: $page-margin-xs !important;
+    padding-right: $page-margin-xs !important;
+  }
+  //removes outer space from whole element
+  .p-off-xs {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  @include margin-incremental("p-bottom-#-xs", "padding-bottom", false, 10);
+}
+
+@media (min-width: $screen-sm-min) {
+
+  @include margin-incremental("sm-m-bottom-#", "margin-bottom");
+
+  @include margin-incremental("sm-p-top-#", "padding-top", false, 35);
+
+  @include margin-incremental("sm-p-bottom-#", "padding-bottom", false, 50);
+}
+
+@media (max-width: $screen-sm-max) {
+
+  @include margin-incremental("m-bottom-#-sm", "margin-bottom", false, 10);
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+  @include margin-incremental("sm-m-bottom-#-sm", "margin-bottom");
+
+  @include margin-incremental("sm-p-bottom-#-sm", "padding-bottom");
+}
+
+@media (min-width: $screen-md-min) {
+
+  @include margin-incremental("md-m-bottom-#", "margin-bottom", false, 45);
+
+  @include margin-incremental("md-p-top-#", "padding-top");
+}

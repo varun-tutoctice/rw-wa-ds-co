@@ -1,0 +1,355 @@
+.ihg-calendar-component {
+  .datepickerContainer {
+    width: auto;
+    position: relative;
+    bottom: 10px;
+    @media (max-width: $screen-xs-max) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      z-index: 1050;
+      display: block;
+      background-color: #000000;
+      outline: 0;
+      margin: 0;
+      padding: 0;
+      -webkit-overflow-scrolling: touch;
+    }
+    &.datepickerOpen {
+      .arrowContainer {
+        @media (min-width: $screen-sm-min) {
+          transition: left 0.2s ease-in 0s;
+          .dpArrow {
+            transition: right 0.2s ease-in 0s;
+          }
+        }
+      }
+    }
+    &.editCID {
+      .dpArrow {
+        @media (min-width: $screen-sm-min) {
+          right: 36.4%;
+        }
+      }
+      @media (min-width: $screen-md-min) {
+        .datepickerOuter {
+          width: 595px;
+          left: 0;
+        }
+        .dpArrow {
+          right: 13px;
+        }
+      }
+      .datepickerOuter {
+        @media (min-width: $screen-lg-min) {
+          width: 736px;
+        }
+      }
+    }
+    &.editCOD {
+      .dpArrow {
+        @media (min-width: $screen-sm-min) {
+          right: 13px;
+        }
+      }
+      .datepickerOuter {
+        @media (min-width: $screen-md-min) {
+          width: 595px;
+          left: 34.5%;
+        }
+        @media (min-width: $screen-lg-min) {
+          width: 736px;
+        }
+      }
+    }
+    .datepickerOuter {
+      width: auto;
+      position: relative;
+      transition: none;
+      @media (max-width: $screen-xs-max) {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      @media (min-width: $screen-md-min) {
+        transition: left 0.3s ease-in 0s, right 0.3s ease-in 0s, margin-left 0.3s ease-in 0s, margin-right 0.3s ease-in 0s, height 0.3s ease-in 0s;
+      }
+      .datepickerInner {
+        background-color: transparent;
+        @media (max-width: $screen-xs-max) {
+          margin: 0;
+          padding: 0;
+        }
+        .arrowContainer {
+          position: relative;
+          height: 0px;
+          display: block;
+          transition: none;
+          .dpArrow {
+            bottom: 100%;
+            position: absolute;
+            align-self: flex-start;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            width: 25px;
+            height: auto;
+            border-right: 12px solid transparent;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid #e6e6e6;
+            border-left: 12px solid transparent;
+          }
+        }
+        .resModuleDatePicker {
+          background-color: #e6e6e6;
+          .datepickerDirectionBase {
+            .calendarCloseContainer {
+              display: block;
+              text-align: right;
+              .calendarCloseButton {
+                outline: none;
+                background-color: transparent;
+                border: 0px none;
+                padding: 0px;
+                display: inline-block;
+                text-align: right;
+                margin: 5px;
+                cursor: pointer;
+              }
+              .calendarCloseIcon {
+                height: 25px;
+                width: 25px;
+                margin: 10px;
+                margin-right: 13px;
+              }
+            }
+            .datePicker {
+              font-size: 10px;
+              padding-left: 15px;
+              padding-right: 15px;
+              .ihg-datepicker {
+                box-sizing: border-box;
+                .monthContainer {
+                  display: flex;
+                  justify-content: space-around;
+                  flex-wrap: wrap;
+                  max-width: 800px;
+                  margin: 0 auto;
+                  .singleMonth {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    min-width: 300px;
+                    max-width: 480px;
+                    padding: 0px 15px;
+                    @media (min-width: 768px) {
+                      width: 50%;
+                      min-width: 0;
+                    }
+                    &.monthOne .ihgcal-moveButton.ihgcal-moveToFuture,
+                    &.monthTwo .ihgcal-moveButton.ihgcal-moveToPast {
+                      display: none;
+                    }
+                    .ihg-daypicker {
+                      outline: none;
+                      .ihgcal-monthContainer {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        .ihgcal-month {
+                          display: inline-table;
+                          width: 100%;
+                          thead {
+                            tr {
+                              .month-year-heading {
+                                .ihgcal-monthTitle {
+                                  margin: 15px 0;
+                                  text-align: center;
+                                  position: relative;
+                                  .ihgcal-moveButton {
+                                    position: absolute;
+                                    height: 100%;
+                                    border: 0 none;
+                                    background-color: transparent;
+                                    padding: 0;
+                                    color: #3F3D3D;
+                                    .ihgcal-arrowIcon {
+                                      font-size: 16px;
+                                      line-height: 16px;
+                                      vertical-align: text-top;
+                                      padding: .6em 10px;
+                                      margin: -10px;
+                                    }
+                                    &.ihgcal-moveToPast {
+                                      left: 0;
+                                    }
+                                    &.ihgcal-moveToFuture {
+                                      right: 0;
+                                    }
+                                  }
+                                  .ihgcal-monthTitleText {
+                                    font-family: "Graphik-Medium", sans-serif;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 1em;
+                                    vertical-align: text-top;
+                                    color: #3F3D3D;
+                                    @media (min-width: 992px) {
+                                      font-size: 18px;
+                                      line-height: 1em;
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          tbody {
+                            .ihgcal-calendarRow {
+                              display: flex;
+                              justify-content: flex-start;
+                              align-items: stretch;
+                              align-content: stretch;
+                              width: 100%;
+                              .ihgcal-calendarCell {
+                                width: 14%;
+                                display: flex;
+                                flex-grow: 1;
+                                .ihgcal-cellOuter {
+                                  outline: none;
+                                  min-width: 100%;
+                                  padding: 0;
+                                  width: auto;
+                                  border-radius: 0;
+                                  .ihgcal-dayHeadingCellContent {
+                                    width: 100%;
+                                    outline: none;
+                                    display: block;
+                                    height: 0;
+                                    line-height: 0;
+                                    padding: 35% 0;
+                                    vertical-align: middle;
+                                    text-align: center;
+                                    .ihgcal-dayHeadingText {
+                                      font-family: "Graphik-Regular", sans-serif;
+                                      font-weight: normal;
+                                      font-size: 14px;
+                                      line-height: inherit;
+                                      color: #3F3D3D;
+                                      text-transform: capitalize;
+                                    }
+                                  }
+                                }
+                                .dp-btn {
+                                  display: inline-block;
+                                  margin-bottom: 0;
+                                  font-weight: normal;
+                                  text-align: center;
+                                  vertical-align: middle;
+                                  touch-action: manipulation;
+                                  cursor: pointer;
+                                  background-image: none;
+                                  border: 0px none;
+                                  white-space: nowrap;
+                                  padding: 0px;
+                                  font-size: 14px;
+                                  line-height: 1.42857143;
+                                  border-radius: 4px;
+                                  color: #000000;
+                                  user-select: none;
+                                  &.ihgcal-btn-invisible {
+                                    visibility: hidden !important;
+                                  }
+                                  &.dp-btn-primary .ihgcal-dateCellContent {
+                                    background-color: #d96932;
+                                    color: #ffffff;
+                                  }
+                                  &.dp-btn-unselectable .ihgcal-dateCellContent {
+                                    cursor: default;
+                                  }
+                                  &.dp-btn-unselectable:not(.dp-btn-primary) .ihgcal-dateCellContent {
+                                    background-color: $neutral-gray2;
+                                    text-decoration: line-through;
+                                  }
+                                  &:hover .ihgcal-dateCellContent {
+                                    border: solid 1px #000000;
+                                  }
+                                  &.dp-btn-unselectable:hover .ihgcal-dateCellContent {
+                                    border: solid 1px $rbf-dark-gray;
+                                  }
+                                  .ihgcal-dateCellContent {
+                                    width: 100%;
+                                    display: flex;
+                                    height: 0;
+                                    line-height: 0;
+                                    padding: 50% 0;
+                                    vertical-align: middle;
+                                    border: solid 1px $neutral-gray2;
+                                    justify-content: center;
+                                    flex-direction: row;
+                                    align-content: center;
+                                    align-items: center;
+                                    background-color: #ffffff;
+                                    font-family: "Graphik-Medium", sans-serif;
+                                    font-size: 14px;
+                                    color: #3F3D3D;
+                                    @media (min-width: 992px) {
+                                      font-size: 16px;
+                                    }
+                                    .ihgcal-cellVerticalCenter {
+                                      display: flex;
+                                      width: 100%;
+                                      height: auto;
+                                      align-self: center;
+                                      align-items: center;
+                                      justify-content: center;
+                                      .ihgcal-checkoutDateArrow,
+                                      .ihgcal-checkinDateArrow {
+                                        align-self: stretch;
+                                        box-sizing: border-box;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-direction: row;
+                                        width: 100%;
+                                        height: auto;
+                                      }
+                                      .ihgcal-checkoutDateArrow {
+                                        border-top: .5em solid transparent;
+                                        border-bottom: .5em solid transparent;
+                                        border-right: .5em solid #ffffff;
+                                        border-left: .5em solid transparent;
+                                      }
+                                      .ihgcal-checkinDateArrow {
+                                        border-top: .5em solid transparent;
+                                        border-bottom: .5em solid transparent;
+                                        border-left: .5em solid #ffffff;
+                                        border-right: .5em solid transparent;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
