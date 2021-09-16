@@ -5,13 +5,43 @@
       "appVersion": "1.0.0",
       "serviceVirtualizationEnabled": true,
       "gigyaApiKey": "4_jpzahMO4CBnl9Elopzfr0A",
-      "isChinaDomain": false
+      "isChinaDomain": false,
+      "choice": {
+        "url": "https://apis.ihg.com/members/benefits/v1/choiceBenefits",
+        "apiKey": "se9ym5iAzaW8pxfBjkmgbuGjJcr3Pj6Y"
+      },
+      "log": {
+        "thresholdNumber": 100,
+        "thresholdLevel": "info",
+        "thresholdTime": 30000,
+        "url": "https://apis.ihg.com/logging/v1/logEntries",
+        "apiKey": "se9ym5iAzaW8pxfBjkmgbuGjJcr3Pj6Y",
+        "logLevels": [
+            "error",
+            "warn",
+            "info",
+            "debug"
+        ],
+        "maskingWords": [
+            "card",
+            "cvv",
+            "token",
+            "cardToken",
+            "expirationDate",
+            "expirationMonth",
+            "expirationYear"
+        ]
+    }
     },
     "china": {
       "appName": "rewards-component",
       "appVersion": "1.0.0",
       "gigyaApiKey": "4_jpzahMO4CBnl9Elopzfr0A",
-      "isChinaDomain": true
+      "isChinaDomain": true,
+      "choice": {
+        "url": "https://apis.ihg.com.cn/members/benefits/v1/",
+        "apiKey": "pQM1YazQwnWi5AWXmoRoA5FSfW0S9x8A"
+      }
     }
   }
 }

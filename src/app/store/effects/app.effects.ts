@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { EMPTY } from 'rxjs';
 import { catchError, map, mergeMap } from 'rxjs/operators';
-import { BaseService } from 'src/app/services/base.service';
+import { ChoiceService } from 'src/app/services/choice/choice.service';
 import { getChoiceData, getChoiceDataSucess } from '../actions/app.actions';
 
 @Injectable()
@@ -19,7 +19,7 @@ export class ChoiceEffects {
     )
   );
 
-  constructor(private actions$: Actions, private baseService: BaseService) {}
+  constructor(private actions$: Actions, private baseService:ChoiceService ) {}
 }
 
 

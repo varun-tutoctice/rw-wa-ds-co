@@ -1,17 +1,22 @@
 {
-  "appConfig": {
+"appConfig": {
     "default": {
       "appName": "rewards-component",
       "appVersion": "1.0.0",
       "serviceVirtualizationEnabled": true,
-      "gigyaApiKey": "4_ybDPI9mmi0EoBqk3PVGJYA",
-      "isChinaDomain": false
+      "choice": {
+        "url": "https://int-api.ihg.com/members/benefits/v1/choiceBenefits",
+        "apiKey": "Ym5gIH17Fe7WcF9J3gHbtAyoeusJpO2q"
+      }
     },
     "china": {
       "appName": "rewards-component",
       "appVersion": "1.0.0",
-      "gigyaApiKey": "4_ybDPI9mmi0EoBqk3PVGJYA",
-      "isChinaDomain": true
+      "choice": {
+        "url": "https://int-api.ihg.com.cn/members/benefits/v1/choiceBenefits",
+        "apiKey": "hxAbS7sj9pPmQC1CCUfny8Hm3Ui0fFpA"
+      }
+
     }
   }
 }
