@@ -6,6 +6,5 @@ export const getChoiceData = createAction(
 );
 export const getChoiceDataSucess = createAction(
   '[Choice Data Sucess] getChoiceData Sucesss',
-  // (choiceData: choiceApp) => choiceData
   props<{choiceData:choiceApp}>()
 );

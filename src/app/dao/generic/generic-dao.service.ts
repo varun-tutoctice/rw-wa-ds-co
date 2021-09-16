@@ -21,10 +21,8 @@ export class GenericServiceDAO {
   getCookie(name:string):void{
     // X-IHG-SSO-TOKEN
     let cookie:any ={} 
-    // cookie[name] =  this.cookieService.get(name) as string
-    cookie[name]="eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlJFUTBNVVE1TjBOQ1JUSkVNemszTTBVMVJrTkRRMFUwUTBNMVJFRkJSamhETWpkRU5VRkJRZyJ9.eyJpc3MiOiJodHRwczovL2ZpZG0uZ2lneWEuY29tL2p3dC80X3liRFBJOW1taTBFb0JxazNQVkdKWUEvIiwiYXBpS2V5IjoiNF95YkRQSTltbWkwRW9CcWszUFZHSllBIiwiaWF0IjoxNjMxNzk3NzUwLCJleHAiOjE2MzE4MDEzNTAsInN1YiI6ImVkYTQwMjQxLWJjZTktNDg5MS05N2VjLTg3YjhhNmE2N2FmOSIsImZpcnN0TmFtZSI6IlRFU1QiLCJkYXRhLnJjTWVtYmVyc2hpcE51bWJlciI6IjE1ODA2MzM3MCIsImRhdGEubWVtYmVyS2V5IjoxNTAwMzU3ODMwMDF9.IsSD1mUOvQvMf3SCJZlwYjR1ILnhYQcElOrFna5gdHbg5VgoAMg1tVIEBEBe6PyIVX0Ir82q1dWG0jdG7dlvlwSelZ3yZ_aElZPIljFMCW23iKbBW8epuTS-0PDXiAGUBCmy1WtBhwffljbVXX4B4woS8a6UwcvUekuoFfa4oN4oTpklRFbyXDyrCroFe4cNTM0JYti9SUDViJ4nFqpLIZx2gwgIAHu-J6hHZ6poXVo4lq-2FnDLNG35FKfDGJb71iHIaLHKaCBKuFhb9Vw1kuGVnhdfuH3pKKdCipB-IZwmZ37WaEOfr_3BF8Ue9RpcdyBuV6CIW2NHWLx3cMplcA"
+    cookie[name] =  this.cookieService.get(name) as string
     Object.assign(this.cookies,cookie)
-    console.log(this.cookies)
   }
 
   doGet(path:string,params:string='',language:string,apikey:string) {
