@@ -1,8 +1,54 @@
-<div>
-    Header Name {{view}}
 
+
+
+<div class="loyalitybg header">
+    <div class="container">
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="mb-3" style="margin-top: 40px;">
+                        <a class="aTag">{{messages[view]?.accountLink}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                    <div class="headerH3 mt-5">
+                        {{messages[view]?.header}}
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12">
+                    <button class="btn btn-primary btn-block btn-lg" style="background-color: none;">{{messages[view]?.walletLink}}</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
 
 
+<!-- <div class="loyalitybg header">
+
+
+    <div>
+        <div class="col-12">
+            <div class="row">
+
+                <div class="mb-3">
+                    <a class="aTag">< {{messages[view]?.accountLink}}</a>
+                </div>
+                <div class="headerH3">
+                    {{messages[view]?.header}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div> -->
 

@@ -1,0 +1,39 @@
+@import "../../../../styles/base/specs/typography";
+
+.header {
+height: 211px;
+left: 0px;
+top: 0px;
+}
+
+.loyalitybg {
+    background: linear-gradient(105.58deg, rgba(199, 178, 99, 0) 33.96%, #968237 100%), linear-gradient(285.58deg, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0) 47.4%), #C7B263;
+    width: 100%;
+height: 211px;
+left: 0px;
+top: 0px;
+}
+
+.headerH3 {
+font-size: 43px;
+font-family: $graphik_medium_font_family;
+line-height: 49px;
+font-weight: bold;
+}
+
+.aTag {
+font-size: 15px;
+font-family: $graphik_medium_font_family;
+line-height: 100%;
+color: #000000;
+font-weight: bold;
+}
+
+.btn{
+    font-family: $graphik_regular_font_family;
+    font-size: 16px;
+line-height: 123%;
+border: 1px solid #000000;
+background-color: rgba(0,0,0,0);
+color: #000000;
+}

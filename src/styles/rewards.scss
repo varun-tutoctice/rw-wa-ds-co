@@ -5,7 +5,7 @@
 @import 'node_modules/ihg-brand-styles/global-brand-code'; //NPM Common Components >> ihg-brand-styles >> global-brand-code.scss
 @import "base/specs/6c-variables";
 
-.account-mgmt {
+.rewards-container {
   @import "base/vendor/bootstrap-sass";
   @import "base/mixins";
   @import "base/specs";
@@ -15,23 +15,12 @@
 }
 
 body {
+  @import "base/vendor/bootstrap-sass";
   margin: 0;
-  background-color: $neutral-gray;
-
-  &.opened-calendar-xs {
-    @media (max-width: 767px) {
-      overflow: hidden;
-      position: relative;
-      height: 100%;
-    }
-  }
 }
 
 @media print {
   .no-print, .no-print * {
-    display: none !important;
-  }
-  .QSISlider {
     display: none !important;
   }
 }

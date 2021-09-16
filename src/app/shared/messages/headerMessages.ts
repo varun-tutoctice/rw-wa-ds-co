@@ -1,7 +1,7 @@
 //sl_tr_start();
 export const headerMessages = {
   "choice":{
-    "header": "Milestone Benefits",
+    "header": "Milestone benefits",
     "accountLink": "Back to my account",
     "walletLink": "View your wallet"
   },

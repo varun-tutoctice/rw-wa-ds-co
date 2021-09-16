@@ -8,10 +8,12 @@ import { BrowserWindowProvider, WindowProvider } from '../providers/window.provi
 import { ComponentHostDirective } from '../directives/component-host.directive';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
   ],
   imports: [
     BrowserModule,
