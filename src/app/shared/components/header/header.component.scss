@@ -27,6 +27,7 @@ font-family: $graphik_medium_font_family;
 line-height: 100%;
 color: #000000;
 font-weight: bold;
+height: 15px;
 }
 
 .mt-tag {
@@ -71,8 +72,57 @@ a {
   }
 
 
+  @media screen and (min-device-width: 100px) and (max-device-width: 380px) {
+    .headerH3 {
+        font-family: $graphik_medium_font_family;
+        font-size: 32px;
+        line-height: 115%;
+        height: 41px;
+        font-weight: bold;
+        }
 
-  @media screen and (min-device-width: 200px) and (max-device-width: 1000px) {
+
+        .aTag {
+            font-size: 15px;
+            font-family: $graphik_medium_font_family;
+            line-height: 100%;
+            color: #000000;
+            font-weight: bold;
+            }
+
+            .mt-tag {
+                margin-top: 20px;
+            }
+            
+
+            .btn-primary {
+                background-color: rgba(0,0,0,0);
+                font-size: 16px;
+                line-height: 123% !important;
+                padding: 15px;
+                padding-right: 18px;
+                padding-left: 18px;
+                height: 50px;
+            }
+ 
+
+        .header {
+            height: 236px;
+            left: 0px;
+            top: 0px;
+            }
+
+        .mt-header {
+            margin-top: 50px;
+        }
+
+        .mt-wlink{
+            margin-top: 40px;
+        }
+
+  }
+
+  @media screen and (min-device-width: 380px) and (max-device-width: 1000px) {
     .headerH3 {
         font-family: $graphik_medium_font_family;
         font-size: 34px;
@@ -102,7 +152,7 @@ a {
                 padding: 13px;
                 padding-right: 18px;
                 padding-left: 18px;
-                height: 41px;
+                height: 50px;
             }
  
 
@@ -123,10 +173,3 @@ a {
 
   }
   
-  @media screen and (min-device-width: 1000px) and (max-device-width: 1200px) {
-
-  }
-
-  @media screen and (min-device-width: 800px) {
-
-  }
