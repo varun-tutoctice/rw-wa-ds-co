@@ -15,16 +15,13 @@ export class HeaderComponent implements OnInit {
   constructor(private subject: SubjectServiceService) { }
 
   ngOnInit(): void {
-    console.log(this.messages['choice'].header)
   } 
 
   clickAccount() {
-    console.log("clicked");
     this.subject.viewInfo.next("accountInformation");
   }
 
   clickWallet() {
-    console.log("clicked");
     this.subject.viewInfo.next("walletInformation");
   }
 

@@ -24,7 +24,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 
   ngOnInit(): void {
-    //  this.view = 'choice';
+      this.view = 'choice';
       this.subject.viewInfo.subscribe(data => {
         this.viewInfo.emit(data);
       })

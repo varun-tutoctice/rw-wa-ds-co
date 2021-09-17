@@ -172,5 +172,11 @@ a {
         }
 
 
+
   }
   
+  @media screen and (min-device-width: 900px) and (max-device-width: 1300px) {
+    .btn-primary {
+        width: 180px;
+    }
+}
