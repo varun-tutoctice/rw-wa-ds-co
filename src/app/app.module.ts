@@ -25,7 +25,7 @@ import { SubjectServiceService } from './shared/services/subject-service.service
   providers: [BrowserWindowProvider, WindowProvider, ComponentHostDirective, SubjectServiceService],
 
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  bootstrap: [AppComponent]
+ // bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(private injector: Injector) {
