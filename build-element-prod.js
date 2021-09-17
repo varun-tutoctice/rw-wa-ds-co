@@ -9,11 +9,9 @@ const concat = require('concat');
   ];
   await fs.ensureDir('./dist/app');
   await fs.emptyDir('./dist/app');
+  await fs.ensureDirSync('./dist/app/js');
   await fs.copy('./dist/build/', './dist/app/' );
-  await concat(files, './dist/app/rewards-component.js');
-  await fs.ensureDirSync('js');
-  await fs.copy('./dist/app/rewards-component.js', 'js/rewards-component.js' );
-
+  await concat(files, './dist/app/js/rewards-component.js');
 })();
 
 
