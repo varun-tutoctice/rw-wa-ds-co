@@ -29,6 +29,13 @@ color: #000000;
 font-weight: bold;
 }
 
+.mt-tag {
+    margin-top: 40px;
+}
+
+.mt-wlink {
+    margin-top: 40px;
+}
 .btn{
     font-family: $graphik_regular_font_family;
     font-size: 16px;
@@ -37,3 +44,89 @@ border: 1px solid #000000;
 background-color: rgba(0,0,0,0);
 color: #000000;
 }
+
+.btn-primary {
+    background-color: rgba(0,0,0,0);
+    font-size: 16px;
+    line-height: 123% !important;
+    padding: 15px;
+    padding-right: 18px;
+    padding-left: 18px;
+
+}
+.mt-header {
+    margin-top: 50px;
+}
+
+.btn-primary:hover {
+    background-color: rgba(0,0,0,0.5) !important;
+} 
+
+.btn-primary:active {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+a {
+      cursor: pointer;
+  }
+
+
+
+  @media screen and (min-device-width: 200px) and (max-device-width: 1000px) {
+    .headerH3 {
+        font-family: $graphik_medium_font_family;
+        font-size: 34px;
+        line-height: 115%;
+        height: 41px;
+        font-weight: bold;
+        }
+
+
+        .aTag {
+            font-size: 15px;
+            font-family: $graphik_medium_font_family;
+            line-height: 100%;
+            color: #000000;
+            font-weight: bold;
+            }
+
+            .mt-tag {
+                margin-top: 20px;
+            }
+            
+
+            .btn-primary {
+                background-color: rgba(0,0,0,0);
+                font-size: 16px;
+                line-height: 123% !important;
+                padding: 13px;
+                padding-right: 18px;
+                padding-left: 18px;
+                height: 41px;
+            }
+ 
+
+        .header {
+            height: 236px;
+            left: 0px;
+            top: 0px;
+            }
+
+        .mt-header {
+            margin-top: 50px;
+        }
+
+        .mt-wlink{
+            margin-top: 40px;
+        }
+
+
+  }
+  
+  @media screen and (min-device-width: 1000px) and (max-device-width: 1200px) {
+
+  }
+
+  @media screen and (min-device-width: 800px) {
+
+  }

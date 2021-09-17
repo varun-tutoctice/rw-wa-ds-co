@@ -23,13 +23,13 @@ import { SubjectServiceService } from './shared/services/subject-service.service
     routingComponents
   ],
   providers: [BrowserWindowProvider, WindowProvider, ComponentHostDirective, SubjectServiceService],
-  
+
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
- // bootstrap: [ AppComponent ]
+  bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(private injector: Injector) {
- 
+
   }
 
   ngDoBootstrap() {
@@ -37,4 +37,4 @@ export class AppModule {
     customElements.define('rewards-component', el);
   }
 
- }
+}
