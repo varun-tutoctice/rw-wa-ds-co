@@ -1,8 +1,8 @@
-import { Component, ComponentFactoryResolver, ViewChild, AfterViewInit, OnInit, Input } from '@angular/core';
+import { Component, ComponentFactoryResolver, ViewChild, AfterViewInit, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ViewContainerRef } from '@angular/core';
 import { WalletViewComponent } from './views/wallet-view/wallet-view.component';
 import { ChoiceViewComponent } from './views/choice-view/choice-view.component';
-
+import { SubjectServiceService } from './shared/services/subject-service.service';
 @Component({
   selector: 'custom-root',
   templateUrl: './app.component.html',
@@ -11,6 +11,7 @@ import { ChoiceViewComponent } from './views/choice-view/choice-view.component';
 export class AppComponent implements OnInit, AfterViewInit {
 
   @ViewChild('dynamicComponent', { read: ViewContainerRef }) myRef: any;
+  @Output() viewInfo: EventEmitter<string> = new EventEmitter<string>();
   @Input() view: any;
   @Input() data: any;
 
@@ -19,11 +20,14 @@ export class AppComponent implements OnInit, AfterViewInit {
     {'name':'choice', 'component': ChoiceViewComponent},
   ];
 
-  constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
+  constructor(private componentFactoryResolver: ComponentFactoryResolver, private subject: SubjectServiceService) { }
 
 
   ngOnInit(): void {
-      this.view = 'choice'
+    //  this.view = 'choice';
+      this.subject.viewInfo.subscribe(data => {
+        this.viewInfo.emit(data);
+      })
   }
 
 

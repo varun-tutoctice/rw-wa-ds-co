@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { routingComponents } from './app-routing.module';
 import { BrowserWindowProvider, WindowProvider } from '../providers/window.provider';
 import { ComponentHostDirective } from '../directives/component-host.directive';
-
+import { SubjectServiceService } from './shared/services/subject-service.service';
 
 
 
@@ -22,10 +22,10 @@ import { ComponentHostDirective } from '../directives/component-host.directive';
   entryComponents: [
     routingComponents
   ],
-  providers: [BrowserWindowProvider, WindowProvider, ComponentHostDirective],
+  providers: [BrowserWindowProvider, WindowProvider, ComponentHostDirective, SubjectServiceService],
   
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  bootstrap: [ AppComponent ]
+ // bootstrap: [ AppComponent ]
 })
 export class AppModule {
   constructor(private injector: Injector) {
