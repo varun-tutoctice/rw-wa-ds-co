@@ -1,5 +1,4 @@
-import { Component, ComponentFactoryResolver, ViewChild, AfterViewInit, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { ViewContainerRef } from '@angular/core';
+import { Component, ComponentFactoryResolver, ViewChild, AfterViewInit, OnInit, Input, Output, EventEmitter, ViewContainerRef } from '@angular/core';
 import { WalletViewComponent } from './views/wallet-view/wallet-view.component';
 import { ChoiceViewComponent } from './views/choice-view/choice-view.component';
 import { SubjectServiceService } from './shared/services/subject-service.service';
@@ -24,7 +23,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 
   ngOnInit(): void {
-      this.view = 'choice';
+     // this.view = 'choice';
       this.subject.viewInfo.subscribe(data => {
         this.viewInfo.emit(data);
       })

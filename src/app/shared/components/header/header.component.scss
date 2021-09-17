@@ -41,9 +41,10 @@ height: 15px;
     font-family: $graphik_regular_font_family;
     font-size: 16px;
 line-height: 123%;
-border: 1px solid #000000;
+border: 1.5px solid #000000;
 background-color: rgba(0,0,0,0);
 color: #000000;
+font-weight: 500;
 }
 
 .btn-primary {
@@ -175,7 +176,7 @@ a {
 
   }
   
-  @media screen and (min-device-width: 900px) and (max-device-width: 1300px) {
+  @media screen and (min-device-width: 900px) and (max-device-width: 1600px) {
     .btn-primary {
         width: 180px;
     }
