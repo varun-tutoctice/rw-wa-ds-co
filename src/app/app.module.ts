@@ -26,7 +26,7 @@ import { APP_BASE_HREF } from '@angular/common';
   providers: [BrowserWindowProvider, WindowProvider, ComponentHostDirective, SubjectServiceService, {provide: APP_BASE_HREF, useValue : '/' }],
 
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  bootstrap: [AppComponent]
+  //bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(private injector: Injector) {

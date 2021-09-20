@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { WalletViewComponent } from './wallet-view.component';
+import { HeaderComponent } from '../../shared/components/header/header.component'
 
 describe('WalletViewComponent', () => {
   let component: WalletViewComponent;
@@ -7,7 +8,7 @@ describe('WalletViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WalletViewComponent ]
+      declarations: [ WalletViewComponent, HeaderComponent ]
     })
     .compileComponents();
   });

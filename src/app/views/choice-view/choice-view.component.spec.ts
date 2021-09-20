@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ChoiceViewComponent } from './choice-view.component';
+import { HeaderComponent } from '../../shared/components/header/header.component'
 
 describe('ChoiceViewComponent', () => {
   let component: ChoiceViewComponent;
@@ -8,7 +9,7 @@ describe('ChoiceViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ChoiceViewComponent ]
+      declarations: [ ChoiceViewComponent, HeaderComponent ]
     })
     .compileComponents();
   });
