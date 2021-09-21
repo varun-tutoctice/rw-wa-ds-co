@@ -5,18 +5,18 @@ export interface IApp {
 }
 
 export interface IAppState {
-  choice: choiceApp;
+  choice: Choice;
   vouchers: vouchersApp;
 }
 
-export interface autoSelectionVoucherDefinitionIdsModel {
+export interface AutoSelectionVoucherDefinitionIdsModel {
   
     voucherDefinitionId: string;
     voucherName: string;
   
 }
 
-export interface voucherDetailsModel{
+export interface VoucherDetailsModel{
     voucherDefinitionId: string;
     voucherMaxCount: number;
     voucherImage: string;
@@ -29,15 +29,15 @@ export interface voucherDetailsModel{
     displayOrderNumber: number;
 }
 
-export interface categoryDetailsModel {
+export interface CategoryDetailsModel {
     categoryId: string;
     categoryName: string;
     categoryIcon: string;
     categoryChoiceCount: number;
-    voucherDetails: voucherDetailsModel[]
+    voucherDetails: VoucherDetailsModel[]
 }
 
-export interface choiceApp {
+export interface Choice {
   benefits: [
     {
       benefitId: string;
@@ -47,8 +47,8 @@ export interface choiceApp {
       milestoneValue: number;
       choiceSelectionCount: number;
       choiceExpirationDate: object;
-      autoSelectionVoucherDefinitionIds: autoSelectionVoucherDefinitionIdsModel[];
-      categoryDetails: categoryDetailsModel[];
+      autoSelectionVoucherDefinitionIds: AutoSelectionVoucherDefinitionIdsModel[];
+      categoryDetails: CategoryDetailsModel[];
     }
   ];
 }

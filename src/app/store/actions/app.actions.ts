@@ -1,10 +1,10 @@
 import { createAction, props } from '@ngrx/store';
-import { choiceApp } from '../app.interface';
+import { Choice } from '../app.interface';
 
 export const getChoiceData = createAction(
   '[Get Choice Data] called getChoiceData'
 );
 export const getChoiceDataSucess = createAction(
   '[Choice Data Sucess] getChoiceData Sucesss',
-  props<{choiceData:choiceApp}>()
+  props<{choiceData:Choice}>()
 );
