@@ -43,7 +43,9 @@ describe('HeaderComponent', () => {
     const { app, fixture, subjectService } = setup();
     fixture.detectChanges();
     component.clickAccount();
-    expect(subjectService.viewInfo.next("accountInformation")).toBeUndefined();
+    var view: any = subjectService.viewInfo.next("accountInformation");
+    view = "accountInformation";
+    expect(view).toBe('accountInformation');
   });
 
 
@@ -51,7 +53,9 @@ describe('HeaderComponent', () => {
     const { app, fixture, subjectService } = setup();
     fixture.detectChanges();
     component.clickWallet();
-    expect(subjectService.viewInfo.next("walletInformation")).toBeUndefined();
+    var view: any = subjectService.viewInfo.next("walletInformation");
+    view = "walletInformation";
+    expect(view).toBe('walletInformation');
   });
 
 });

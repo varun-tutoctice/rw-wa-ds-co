@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed,  async, fakeAsync, tick } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { Component, ComponentFactoryResolver, ViewChild, AfterViewInit, OnInit, Input, Output, EventEmitter, ViewContainerRef, NO_ERRORS_SCHEMA } from '@angular/core';
+import { Component, ComponentFactoryResolver, ViewChild, AfterViewInit, OnInit, Input, Output, EventEmitter, ViewContainerRef } from '@angular/core';
 import { WalletViewComponent } from './views/wallet-view/wallet-view.component';
 import { ChoiceViewComponent } from './views/choice-view/choice-view.component';
 import { SubjectServiceService } from './shared/services/subject-service.service';
@@ -10,6 +10,7 @@ import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/t
 
 describe('AppComponent', () => {
   let service: SubjectServiceService;
+  let factoryResolver: ComponentFactoryResolver;
   let component: AppComponent;
   
   let fixture: ComponentFixture<AppComponent>;
@@ -25,56 +26,96 @@ describe('AppComponent', () => {
         ChoiceViewComponent
       ],
       providers: [
-        SubjectServiceService
-      ],
-      schemas: [ NO_ERRORS_SCHEMA ]
+        SubjectServiceService,
+        ComponentFactoryResolver
+      ]
     }).overrideModule(BrowserDynamicTestingModule, { set: { entryComponents: [WalletViewComponent, ChoiceViewComponent] } });
     service = TestBed.inject(SubjectServiceService);
+    factoryResolver = TestBed.inject(ComponentFactoryResolver);
   });
 
 
-  // beforeEach(() => {
-  //   fixture = TestBed.createComponent(AppComponent);
-  //   component = fixture.componentInstance;
+  // beforeEach(()=>{
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   component = fixture?.componentInstance;
+  //   fixture.detectChanges();
   // });
 
   function setup() {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    const subjectService = fixture.debugElement.injector.get(
+    const app = fixture?.debugElement?.componentInstance;
+    const subjectService = fixture?.debugElement?.injector.get(
       SubjectServiceService
     );
-    return { fixture, app, subjectService}
+    const componentFactory = fixture?.debugElement?.injector.get(
+      ComponentFactoryResolver
+    );
+    return { fixture, app, subjectService, componentFactory}
   }
 
-  // it('should create with a balance avaliable in the session', () => {
-  //   fixture.detectChanges();
-  //   expect(component).toBeUndefined();
-  // });
+
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
+    const { fixture, app, subjectService, componentFactory } = setup();
+    // fixture.detectChanges();
     expect(app).toBeTruthy();
   });
 
-  // it(`should get the string from header and emit to rewards component`, fakeAsync(() => {
 
+  // it('should dynamically create a component binding', () => {
   //   const fixture = TestBed.createComponent(AppComponent);
-  //   const app = fixture.componentInstance;
+  //   fixture.componentInstance.ngAfterViewInit();
+  //   console.log("Fixture", fixture);
+  //   // component.view = "choice";
+  //   // component.ngAfterViewInit();
+  //   // const mockData = ""
+  //   // const spy = spyOn(subjectService, 'viewInfo' as any).and.returnValue(
+  //   //   Observable.create((observer: any)=>{
+  //   //     observer.next(mockData);
+  //   //     return observer;
+  //   //   })
+  //   // )
+  // });
 
-  //   app.ngAfterViewInit()
-  //   // let ngOnInitFn = ChoiceViewComponent.prototype.ngOnInit;
-  //   // ChoiceViewComponent.prototype.ngOnInit = () => {} // override ngOnInit
 
-  //   // tick();
+  // // it('should set pageLoaded after view init', () => {
+  // //   //component.view = "choice"
+  // //   const { fixture, app, subjectService } = setup();
+  // //   fixture.detectChanges();
+  // //   component.view = "choice";
+  // //   component.ngAfterViewInit();
+  // //   const mockData = ""
+  // //   const spy = spyOn(service, 'viewInfo' as any).and.returnValue(
+  // //     Observable.create((observer: any)=>{
+  // //       observer.next(mockData);
+  // //       return observer;
+  // //     })
+  // //   )
+  // // });
+
+
+
   
-  //   // fixture.detectChanges(); 
-  //   // ChoiceViewComponent.prototype.ngOnInit = ngOnInitFn; // revert ngOnInit
-  
-  //  // expect(comp.userList.length).toBe(3, 'user list after function call');
-  // }));
+  // // it(`Data needs to be emitted on header click`, () => {
+  // //   // const { fixture, app, subjectService } = setup();
+  // //   const fixture = TestBed.createComponent(AppComponent);
+  // //   fixture.detectChanges();
+  // //   const mockData = ""
+  // //   const spy = spyOn(service, 'viewInfo' as any).and.returnValue(
+  // //     Observable.create((observer: any)=>{
+  // //       observer.next(mockData);
+  // //       return observer;
+  // //     })
+  // //   )
+
+  // // });
 
 
-  
+
+  // // it('should render title', () => {
+  // //   const fixture = TestBed.createComponent(AppComponent);
+  // //   fixture.detectChanges();
+  // //   const compiled = fixture.nativeElement as HTMLElement;
+  // //   expect(compiled.querySelector('.content span')?.textContent).toContain('rewards-component app is running!');
+  // // });
 });

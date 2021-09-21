@@ -1,11 +1,12 @@
-import { Component, ComponentFactoryResolver, ViewChild, AfterViewInit, OnInit, Input, Output, EventEmitter, ViewContainerRef } from '@angular/core';
+import { Component, ComponentFactoryResolver, ViewChild, AfterViewInit, OnInit, Input, Output, EventEmitter, ViewContainerRef, ViewEncapsulation } from '@angular/core';
 import { WalletViewComponent } from './views/wallet-view/wallet-view.component';
 import { ChoiceViewComponent } from './views/choice-view/choice-view.component';
 import { SubjectServiceService } from './shared/services/subject-service.service';
 @Component({
   selector: 'custom-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit, AfterViewInit {
 
@@ -15,18 +16,18 @@ export class AppComponent implements OnInit, AfterViewInit {
   @Input() data: any;
 
   mappingView: any = [
-    {'name':'wallet', 'component': WalletViewComponent},
-    {'name':'choice', 'component': ChoiceViewComponent},
+    { 'name': 'wallet', 'component': WalletViewComponent },
+    { 'name': 'choice', 'component': ChoiceViewComponent },
   ];
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver, private subject: SubjectServiceService) { }
 
 
   ngOnInit(): void {
-     // this.view = 'choice';
-      this.subject.viewInfo.subscribe(data => {
-        this.viewInfo.emit(data);
-      })
+    //this.view = 'choice';
+    this.subject.viewInfo.subscribe(data => {
+      this.viewInfo.emit(data);
+    })
   }
 
 
