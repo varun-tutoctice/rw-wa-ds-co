@@ -1,0 +1,19 @@
+/*! _bootstrap-overrides.scss 09/05/2017  //(C) IHG. All rights reserved. */
+
+.form-control {
+  border: 1px solid $neutral-gray2;
+  border-radius: 0;
+}
+
+select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url("//s7d2.scene7.com/is/image/ihg/caret_down?fmt=png-alpha") no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+
+  &::-ms-expand {
+    display: none;
+  }
+}

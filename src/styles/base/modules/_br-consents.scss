@@ -1,0 +1,217 @@
+.modal-font {
+    font-family: "Graphik Regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-weight: 400;
+}
+#gigya-br-consent {
+    .gigya-screen.portrait {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .gigya-screen-loader {
+        display: none;
+    }
+
+    .gigya-composite-control-checkbox {
+        input[type="checkbox"] {
+            display: none;
+            padding: 3px 3px 3px 3px;
+        }
+    
+        input[type="checkbox"]::after{
+            margin-right: 10px;
+        }
+    
+        input[type="checkbox"] + label:focus {
+            background: transparent;
+            box-shadow: none;
+            outline: none;
+            outline-width: 0;
+            -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+        }
+    
+        input[type=checkbox] + label {
+            display: flex;
+            margin: 0.2em 0 0.2em 0;
+            cursor: pointer;
+            padding: 0.2em 0 0.2em 0;
+            background: transparent;
+            box-shadow: none;
+            outline: none;
+            outline-width: 0;
+            -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+        }
+
+        .gigya-checkbox-text {
+            @extend .modal-font;
+            color: $rbf-medium-gray;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        
+        
+        input[type=checkbox] + label:before {
+            content: '';
+            border: 1px solid $rbf-medium-gray;
+            display: inline-block;
+            width: 35px;
+            height: 20px;
+            color: transparent;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+            pointer-events: auto;
+            border-radius: 0.2em;
+            @media all and (min-width: 768px) {
+                width: 20px;
+            }
+        }
+    
+        input[type=checkbox]:checked + label:before {
+            background-color: $ihg-mango;
+            width: 35px;
+            height: 20px;
+            background-image: url('https://ihg.scene7.com/is/content/ihg/sixsenses-check-solid');
+            background-size: 80% 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px solid $rbf-dark-gray;
+            border-radius: 0.2em;
+            @media all and (min-width: 768px) {
+                width: 20px;
+            }
+        } 
+
+        .gigya-label::after {
+            font-size: 20px;
+        }
+    }
+
+    .gigya-composite-control-link {
+        @extend .inline-cta;
+        margin-bottom: 20px;
+    }
+
+    .tc-label-note{
+        display: none;
+    }
+
+    .tc-note, .tc-note-i {
+        padding-bottom: 0;
+    }
+    
+    .tc-note, .tc-note-i, .tc-note-ii{
+        @extend .modal-font;
+        font-size: 16px;
+        font-weight: 400;
+        color: $rbf-medium-gray;
+    }
+
+    .tc-secondary-button, .tc-primary-button {
+        @extend .modal-font;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 2.0px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .tc-primary-button {
+        color: $white;
+        height: 50px;
+        margin-bottom: 30px;
+        @media (min-width: $screen-md-min) {
+            width: 45%;
+            margin-right: 5%;
+            float: left;
+            margin-bottom: 15px;
+        }
+
+        .gigya-input-submit {
+            background-color: $ihg-mango;
+            outline: none !important;
+            box-sizing: border-box;
+            padding: 2px;
+
+            &:disabled {
+                background-color: $neutral-gray3;
+                color: $rbf-medium-gray;
+                cursor: default;
+            }
+        }
+    } 
+    
+    .tc-secondary-button {
+        color: $ihg-mango;
+        height: 46px;
+        border: 2px solid $ihg-mango;  
+        @media (min-width: $screen-md-min) {
+            width: 44%;
+            margin-left: 5%;
+        }  
+
+        .gigya-input-submit {
+            background-color: transparent;
+            outline: none !important;
+            box-sizing: border-box;
+            padding: 2px;
+            color: $ihg-mango;
+        }
+    }
+
+    .consents-modal-title {
+        @extend .modal-font;
+        font-size: 18px;
+        color: $ihg-mango;
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            font-size: 20px;
+        }
+
+        @media all and (min-width: 992px) {
+            font-size: 24px;
+        }
+    }
+
+    .consents-modal-intro {
+        margin-bottom: 15px;
+        @extend .modal-font;
+        font-size: 16px;
+        color: $rbf-medium-gray;
+    }
+}
+
+
+  .modal-close-container {
+      .consents-modal-close {
+          right: 30px;
+          position: absolute;
+          z-index: 1046;
+          background: transparent url("https://ihg.scene7.com/is/content/ihg/ihg-simplifylogin-general-xicon-1x1");
+          width: 25px;
+          height: 26px;
+          background-position: center;
+          border: none;
+      }
+
+      .consents-modal-close:focus {
+          outline: 0;   
+      }
+  }
+
+  .modal-body {
+    @media all and (min-width: 768px) {
+        padding: 30px 75px 75px;
+    }
+
+    .consents-modal-container {
+        padding-top: 30px;
+        @media all and (min-width: 768px) {
+            padding-top: 45px;
+        }
+    }
+  }

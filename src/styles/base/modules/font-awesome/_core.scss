@@ -1,0 +1,10 @@
+// Base Class Definition
+// -------------------------
+
+.#{$fa-css-prefix} > svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}

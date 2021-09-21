@@ -1,0 +1,5 @@
+@each $brand, $color in $ramBrandColorList {//NPM Common Components >> ihg-brand-styles >> global-brand-code.scss
+  .brand-#{$brand}{
+    color: $color;
+  }
+}

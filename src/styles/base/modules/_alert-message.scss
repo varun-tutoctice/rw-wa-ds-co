@@ -1,0 +1,31 @@
+/*! _alert-message.scss 09/11/2017 //(C) IHG. All rights reserved. */
+
+.alert-message {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  background-color: $neutral-gray3;
+  @include flex-container;
+
+  .message-icon {
+    margin-right: 10px;
+    min-height: 30px;
+    max-height: 30px;
+    min-width: 30px;
+    max-width: 30px;
+    background-image: $icon-alert;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-flex;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+
+}

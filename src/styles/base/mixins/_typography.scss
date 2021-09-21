@@ -1,0 +1,210 @@
+/**
+ * _typography.scss 12/14/2016 //(C) IHG. All rights reserved.
+ */
+
+@mixin font($family: null, $size: null, $line-height: null, $letter-spacing: null, $weight: null, $style: null, $stretch: null, $color: null) {
+  font-family: $family;
+  font-weight: $weight;
+  font-style: $style;
+  font-stretch: $stretch;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}
+
+@mixin cta($family: null, $size: null, $line-height: null, $letter-spacing: null, $weight: null, $style: null, $stretch: null, $color: null, $text-decoration: null) {
+  @include font($family, $size, $line-height, $letter-spacing, $weight, $style, $stretch, $color);
+
+  text-decoration: $text-decoration;
+
+  &:active, &:visited, &:hover, &:focus {
+    color: $color;
+    text-decoration: $text-decoration;
+  }
+}
+
+@mixin make-radio-box {
+  .flexible {
+    display: flex;
+  }
+
+  .refineButton {
+    min-height: 3em;
+    display: flex;
+    width: 100%;
+    line-height: 1.1;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  label.refineLabel {
+    background-color: #ffffff;
+    border-color: #fff;
+  }
+
+  label.refineLabel {
+    margin: 0;
+    font-weight: 400;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    border: solid 1px #707372;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .inputContainer {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+  }
+
+  .inputItem {
+    min-width: 1.9em;
+    text-align: center;
+    flex-grow: 0;
+    margin: 3px;
+  }
+
+  .textItem {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+    word-wrap: break-word;
+    margin: 3px;
+  }
+
+  .refineRadio {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .refineRadioInput-hidden {
+    display: none;
+  }
+
+  i {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@mixin make-check-box {
+  .flexible {
+    display: flex;
+  }
+
+  .refineButton {
+    min-height: 3em;
+    display: flex;
+    width: 100%;
+    line-height: 1.1;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  label.refineLabel {
+    background-color: #ffffff;
+    border-color: #fff;
+  }
+
+  label.refineLabel {
+    margin: 0;
+    font-weight: 400;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    border: solid 1px #707372;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .inputContainer {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+  }
+
+  .inputItem {
+    text-align: center;
+    flex-grow: 0;
+    margin-right: 10px;
+  }
+
+  .textItem {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
+  .refineCheckInput-hidden {
+    display: none;
+  }
+
+  .brandCheckBoxIcon {
+    border: solid 1px #707372;
+    font-size: .62em;
+    width: 30px;
+    height: 30px;
+  }
+
+  .brandCheckMark {
+    color: transparent;
+  }
+
+  .brandCheckBox {
+    color: transparent;
+    margin-top: auto;
+  }
+
+  .brandCheckBoxIcon {
+    border: 0;
+  }
+
+  .brandCheckBoxIcon > .brandCheckMark {
+    color: white;
+  }
+
+  .brandCheckBoxIcon > .brandCheckBox {
+    background-color: white;
+    border: solid 1px black;
+  }
+
+  .brandCheckBoxIcon > .brandCheckBox-color {
+    background-color: $ihg-mango;
+  }
+
+  .filterCheckbox {
+    stroke: white;
+    fill: none;
+  }
+
+  .brandCheckMark-color .filterCheckboxRect {
+    fill: $ihg-mango;
+  }
+
+  i {
+    width: 28px;
+    height: 28px;
+  }
+}

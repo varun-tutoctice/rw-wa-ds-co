@@ -1,29 +1,33 @@
-import { Component, ComponentFactoryResolver, ViewChild, AfterViewInit, OnInit, Input } from '@angular/core';
-import { ViewContainerRef } from '@angular/core';
-import { WalletViewComponent } from './wallet-view/wallet-view.component';
-import { ChoiceViewComponent } from './choice-view/choice-view.component';
-
+import { Component, ComponentFactoryResolver, ViewChild, AfterViewInit, OnInit, Input, Output, EventEmitter, ViewContainerRef, ViewEncapsulation } from '@angular/core';
+import { WalletViewComponent } from './views/wallet-view/wallet-view.component';
+import { ChoiceViewComponent } from './views/choice-view/choice-view.component';
+import { SubjectServiceService } from './shared/services/subject-service.service';
 @Component({
   selector: 'custom-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit, AfterViewInit {
 
   @ViewChild('dynamicComponent', { read: ViewContainerRef }) myRef: any;
+  @Output() viewInfo: EventEmitter<string> = new EventEmitter<string>();
   @Input() view: any;
   @Input() data: any;
 
   mappingView: any = [
-    {'name':'wallet', 'component': WalletViewComponent},
-    {'name':'choice', 'component': ChoiceViewComponent},
+    { 'name': 'wallet', 'component': WalletViewComponent },
+    { 'name': 'choice', 'component': ChoiceViewComponent },
   ];
 
-  constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
+  constructor(private componentFactoryResolver: ComponentFactoryResolver, private subject: SubjectServiceService) { }
 
 
   ngOnInit(): void {
-    //this.view = 'wallet'
+    //this.view = 'choice';
+    this.subject.viewInfo.subscribe(data => {
+      this.viewInfo.emit(data);
+    })
   }
 
 
@@ -33,6 +37,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     const ref = this.myRef.createComponent(factory);
     ref.changeDetectorRef.detectChanges();
     ref.instance.data = this.data;
+    ref.instance.view = this.view;
   }
 
 
