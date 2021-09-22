@@ -1,0 +1,47 @@
+/*!
+ * _6c-variables.scss 05/03/2016  //(C) IHG. All rights reserved.
+ * Rewards Club - Spec Variables
+ */
+
+//Outer margin between the container and the contents of the first and last column.
+$page-margin-xs: 20px !default;
+
+/*!
+ * _6c-colorpallet.scss 12/15/2016 //(C) IHG. All rights reserved.
+ * Rewards Club - Color Pallet
+ */
+
+$ihg-cherry: #d71920;
+$ihg-mango: #d96932;
+$ihg-mango2: #d46731;
+$ihg-mango3: #ba5b2b;
+$ihg-mango4: #D86121;
+$ihg-mango5: #d46732;
+$ihg-orange: #e78715;
+
+$neutral-gray: #f4f2ed;
+$neutral-gray2: #d8d3cb;
+$neutral-gray3: #c0bab4;
+$neutral-gray5: #97999b;
+
+$rbf-light-gray: #ebebeb;
+$rbf-medium-gray: #707372;
+$rbf-gray: #605d5d;
+$rbf-dark-gray: #3f3d3d;
+
+$white: #fff;
+$black: #000;
+$red-error: #cc0000;
+
+//
+// Level Colors
+//
+$color-club: #d46731;
+$color-gold-elite: #85754e;
+$color-platinum-elite: #818183;
+$color-spire-elite: #ab2328;
+$color-ambassador: #cbab92;
+
+//
+// Brand Colors
+//NPM Common Components >> ihg-brand-styles >> global-brand-code.scss

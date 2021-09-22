@@ -1,0 +1,77 @@
+/*!
+ * _6c-variables.scss 06/04/2018  //(C) IHG. All rights reserved.
+ * Rewards Club - Spec Variables
+ */
+
+//Outer margin between the container and the contents of the first and last column.
+$page-margin-xs: 20px !default;
+
+$ihg-cherry: #d71920;
+$ihg-mango: #d96932;
+$ihg-mango2: #d46731;
+$ihg-mango3: #ba5b2b;
+$ihg-mango4: #D86121;
+$ihg-mango5: #d46732;
+$ihg-orange: #e78715;
+
+$neutral-gray: #f4f2ed;
+$neutral-gray2: #d8d3cb;
+$neutral-gray3: #c0bab4;
+$neutral-gray4: #b6aaad;
+$neutral-gray5: #97999b;
+
+$rbf-light-gray: #ebebeb;
+$rbf-medium-gray: #707372;
+$rbf-gray: #605d5d;
+$rbf-dark-gray: #3f3d3d;
+$rbf-neutral99-gray: #ccc;
+$rbf-required: #CC0000;
+
+$white: #fff;
+$black: #000;
+$blue: blue;
+$red-error: #cc0000;
+$error-message: #ff0000;
+
+$luxury-alternate: #3F3D3D;
+
+//
+// Level Colors
+//
+$color-club: #d46731;
+$color-gold-elite: #85754e;
+$color-platinum-elite: #818183;
+$color-spire-elite: #ab2328;
+$color-ambassador: #cbab92;
+
+$screen-xs: 480px !default;
+$screen-sm: 768px !default;
+$screen-md: 992px !default;
+$screen-lg: 1200px !default;
+
+$screen-xs-min: $screen-xs !default;
+$screen-sm-min: $screen-sm !default;
+$screen-md-min: $screen-md !default;
+$screen-lg-min: $screen-lg !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+%component-container {
+  position: relative;
+
+  .anchor {
+    position: absolute;
+    top: -100px;
+    left: 0;
+  }
+}
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 768px,
+        md: 992px,
+        lg: 1200px
+) !default;

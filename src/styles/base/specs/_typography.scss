@@ -1,0 +1,49 @@
+$fonts-path: "/cdn/vendor/ihgfonts/v1.0.0";
+
+@mixin font($family: null, $size: null, $line-height: null, $letter-spacing: null, $weight: null, $style: null, $stretch: null, $color: null) {
+  font-family: $family;
+  font-weight: $weight;
+  font-style: $style;
+  font-stretch: $stretch;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}
+
+@mixin cta($family: null, $size: null, $line-height: null, $letter-spacing: null, $weight: null, $style: null, $stretch: null, $color: null, $text-decoration: null) {
+  @include font($family, $size, $line-height, $letter-spacing, $weight, $style, $stretch, $color);
+
+  text-decoration: $text-decoration;
+  cursor: pointer;
+
+  &:active, &:visited, &:hover, &:focus {
+    color: $color;
+    text-decoration: $text-decoration;
+  }
+}
+
+@at-root {
+  @font-face {
+    font-family: 'Graphik Regular';
+    src: url("#{$fonts-path}/Graphik-Regular-Web.eot");
+    src: url("#{$fonts-path}/Graphik-Regular-Web.eot?#iefix") format("embedded-opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+@at-root {
+  @font-face {
+    font-family: 'Graphik Medium';
+    src: url("#{$fonts-path}/Graphik-Medium-Web.eot");
+    src: url("#{$fonts-path}/Graphik-Medium-Web.eot?#iefix") format("embedded-opentype");
+    font-weight: 500;
+    font-style: normal;
+  }
+}
+
+$graphik_regular_font_family: "Graphik Regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+$graphik_medium_font_family: "Graphik Medium", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+
+

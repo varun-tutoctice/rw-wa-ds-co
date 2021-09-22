@@ -25,10 +25,12 @@
               "src/health-check.html",
               "src/config/production.appConfig.json",
               "src/config/staging.appConfig.json",
-              "src/config/qap.appConfig.json"
+              "src/config/qap.appConfig.json",
+              "src/styles"
+              
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/rewards.scss"
             ],
             "scripts": []
           },

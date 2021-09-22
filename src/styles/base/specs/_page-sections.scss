@@ -1,0 +1,81 @@
+/**
+ * _spa-page.scss 12/09/2016 //(C) IHG. All rights reserved.
+ */
+
+.section-header {
+  color: white;
+  background-color: rgba($rbf-dark-gray, 1);
+
+  .justify-content {
+    @include flex-container;
+  }
+
+  .header-title {
+    color: inherit;
+
+    > * {
+      color: inherit;
+    }
+
+    margin: 20px;
+  }
+}
+
+.sections-container {
+  /* on small viewport and onward page is divided in two columns */
+  .col-left, .col-right {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+    @media (min-width: $screen-sm-min) {
+      width: calc(50% - 5px);
+    }
+  }
+
+  .col-left {
+    @media (min-width: $screen-sm-min) {
+      margin-right: 5px;
+    }
+  }
+
+  .col-right {
+    @media (min-width: $screen-sm-min) {
+      margin-left: 5px;
+    }
+  }
+
+  .section {
+    @media (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .component-background {
+    background-color: $white;
+  }
+}
+
+.guest-name-link a:hover, .guest-name-link a:focus {
+  text-decoration: none;
+  cursor: default;
+}
+
+.how-edit-name-link {
+  margin-left: 20px;
+
+  @media (max-width: $screen-sm-min) {
+    display: block;
+    margin-left: 0px;
+  }
+}
+
+.panel-body {
+  padding: 0px !important;
+}
+
+.add-button-container {
+  button {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,31 @@
+<div class="loyalitybg header">
+    <div class="container">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="mb-3 mt-tag">
+                        <a class="aTag" (click)="clickAccount()">
+                            <svg width="5" bottom="20" height="8" viewBox="0 0 5 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.8112 5.79848C4.07006 6.07198 4.06767 6.51312 3.80584 6.78379C3.54402 7.05446 3.12191 7.05216 2.86305 6.77866L0.211559 3.97731C-0.047308 3.70381 -0.0449115 3.26267 0.216912 2.992L2.89868 0.21961C3.1605 -0.0510609 3.58261 -0.0487679 3.84147 0.224732C4.10034 0.498232 4.09795 0.939369 3.83612 1.21004L1.62843 3.49233L3.8112 5.79848Z"
+                                    fill="black" />
+                            </svg>
+                            &nbsp;{{messages[view]?.accountLink}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                    <div class="headerH3 mt-header">
+                        {{messages[view]?.header}}
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12 mt-wlink">
+                    <button class="btn btn-primary btn-block btn-lg"
+                        (click)="clickWallet()">{{messages[view]?.walletLink}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

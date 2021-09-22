@@ -1,0 +1,107 @@
+/**
+ * _Kimpton-typography.scss 11/15/2017 //(C) IHG. All rights reserved.
+ * Inner Circle Preferences - Typography
+ */
+
+//Font Definitions
+
+@at-root {
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url("#{$fonts-path}/proximanova_regular-webfont.eot");
+    src: url("#{$fonts-path}/proximanova_regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+@at-root {
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url("#{$fonts-path}/proximanova_regular-webfont.eot");
+    src: url("#{$fonts-path}/proximanova_regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+$Proxima_Nova_font_family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+$chronicle_font_family: "HCo Chronicle Display", Georgia, "Times New Roman", Times, serif;
+$kimpton_background_color: #e3e2e2;
+$kimpton_underline_link_color: #31a7e6;
+$white: #fff;
+
+.t4-kimpton {
+  @include font($Proxima_Nova_font_family, 16px, 19.2px, -0.04px, 600, italic, normal, inherit);
+
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    @include font($Proxima_Nova_font_family, 18px, 21.6px, -0.04px, 600, italic, normal, inherit);
+  }
+
+  @media all and (min-width: 992px) {
+    @include font($Proxima_Nova_font_family, 20px, 24px, -0.04px, 600, italic, normal, inherit);
+  }
+}
+
+.k5 .base-accordion .accordion-header span  {
+  @include font($Proxima_Nova_font_family, 16px, 19.2px, -0.01px, 400, normal, normal, inherit);
+
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    @include font($Proxima_Nova_font_family, 18px, 21.6px, -0.01px, 400, normal, normal, inherit);
+  }
+
+  @media all and (min-width: 992px) {
+    @include font($Proxima_Nova_font_family, 20px, 24px, -0.01px, 400, normal, normal, inherit);
+  }
+}
+
+.t6-kimpton {
+  @include font($Proxima_Nova_font_family, 16px, 16.8px, -0.04px, 600, italic, normal, inherit);
+}
+
+.t7-kimpton {
+  @include font($Proxima_Nova_font_family, 16px, 16.8px, -0.01px, 400, normal, normal, inherit);
+}
+
+.component-background-kimpton {
+  background-color: $kimpton_background_color;
+}
+
+.cta-1-kimpton {
+  @include cta($Proxima_Nova_font_family, 16px, 21.6px, 0.018px, 500, normal, normal, $white, none);
+
+  border: 0;
+  background-color: $kimpton_underline_link_color;
+  padding: 16px;
+
+  &:disabled {
+    background-color: $neutral-gray3;
+    color: $rbf-medium-gray;
+  }
+}
+
+.inline-cta-kimpton {
+  @include cta($Proxima_Nova_font_family, 16px, 21.6px, inherit, 600, normal, normal, $kimpton_underline_link_color, underline);
+
+  &:disabled {
+    color: $rbf-medium-gray;
+  }
+
+  &.disabled {
+    color: $rbf-medium-gray;
+    pointer-events: none;
+  }
+}
+
+.inline-expand-cta2-kimpton {
+  @include cta($Proxima_Nova_font_family, 12px, 14.4px, inherit, 600, normal, normal, $rbf-dark-gray);
+
+  cursor: pointer;
+  pointer-events: all;
+  text-decoration: underline;
+  text-decoration-color: $kimpton_underline_link_color;
+}
+
+.brandCheckMark-color-kimpton {
+  fill: $kimpton_underline_link_color;
+}

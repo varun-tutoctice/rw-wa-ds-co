@@ -1,0 +1,106 @@
+@at-root {
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url("#{$fonts-path}/proximanova_regular-webfont.eot");
+    src: url("#{$fonts-path}/proximanova_regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+@at-root {
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url("#{$fonts-path}/proximanova_regular-webfont.eot");
+    src: url("#{$fonts-path}/proximanova_regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+$Proxima_Nova_font_family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+
+.club-name-card {
+  @include font($chronicle_font_family, 28px, 1em, 0, 0, italic, normal, $white);
+
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    @include font($chronicle_font_family, 36px, 1em, 0, 0, italic, normal, $white);
+  }
+
+  @media (min-width: $screen-lg-min) {
+    @include font($chronicle_font_family, 42px, 1em, 0, 0, italic, normal, $white);
+  }
+}
+
+.kar-name-card {
+  @include font($Proxima_Nova_font_family, 12px, 1.2, 0, 0, normal, normal, $black);
+
+  @media (min-width: $screen-sm-min) {
+    @include font($Proxima_Nova_font_family, 16px, 1.2, 0, 0, normal, normal, $black);
+  }
+
+  @media (min-width: $screen-md-min) {
+    @include font($Proxima_Nova_font_family, 18px, 1.2, 0, 0, normal, normal, $black);
+  }
+}
+
+.kar-number-card {
+  @include font($Proxima_Nova_font_family, 10px, 1em, 0, 0, normal, normal, $black);
+
+  @media (min-width: $screen-sm-min) {
+    @include font($Proxima_Nova_font_family, 14px, 1em, 0, 0, normal, normal, $black);
+  }
+
+  @media (min-width: $screen-md-min) {
+    @include font($Proxima_Nova_font_family, 16px, 1em, 0, 0, normal, normal, $black);
+  }
+}
+
+.kar-exp-date {
+  @include font($Proxima_Nova_font_family, 10px, 1em, 0, 0, normal, normal, $black);
+
+  @media (min-width: $screen-sm-min) {
+    @include font($Proxima_Nova_font_family, 14px, 1em, 0, 0, normal, normal, $black);
+  }
+
+  @media (min-width: $screen-md-min) {
+    @include font($Proxima_Nova_font_family, 16px, 1em, 0, 0, normal, normal, $black);
+  }
+}
+
+.amb-name-card {
+  @include font("GillSans Light", 20px, inherit, 0, 0, normal, normal, $white);
+
+  @media (min-width: $screen-sm-min) {
+    @include font("GillSans Light", 34px, inherit, 0, 0, normal, normal, $white);
+  }
+
+  @media (min-width: $screen-md-min) {
+    @include font("GillSans Light", 38px, inherit, 0, 0, normal, normal, $white);
+  }
+}
+
+.amb-number-card {
+  @include font("GillSans Light", 12px, inherit, 0, 0, normal, normal, $white);
+
+  @media (min-width: $screen-sm-min) {
+    @include font("GillSans Light", 16px, inherit, 0, 0, normal, normal, $white);
+  }
+
+  @media (min-width: $screen-md-min) {
+    @include font("GillSans Light", 20px, inherit, 0, 0, normal, normal, $white);
+  }
+}
+
+.amb-exp-date {
+  @include font("GillSans Light", 0.3em, inherit, 0, 0, normal, normal, $white);
+
+  @media (min-width: $screen-sm-min) {
+    @include font("GillSans Light", 0.5em, inherit, 0, 0, normal, normal, $white);
+  }
+
+  @media (min-width: $screen-md-min) {
+    @include font("GillSans Light", 0.7em, inherit, 0, 0, normal, normal, $white);
+  }
+}
+
