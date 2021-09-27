@@ -25,9 +25,7 @@
               "src/health-check.html",
               "src/config/production.appConfig.json",
               "src/config/staging.appConfig.json",
-              "src/config/qap.appConfig.json",
-              "src/styles"
-              
+              "src/config/qap.appConfig.json"
             ],
             "styles": [
               "src/styles/rewards.scss"

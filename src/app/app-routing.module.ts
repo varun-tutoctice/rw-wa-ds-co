@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 //Choice View Components
 import { ChoiceViewComponent } from './views/choice-view/choice-view.component';
+import { RewardsHeaderComponent } from './views/choice-view/components/rewards-header/rewards-header.component';
 //Wallet View Components
 import { WalletViewComponent } from './views/wallet-view/wallet-view.component';
 //Shared Components
@@ -31,6 +32,7 @@ export class AppRoutingModule { }
 export const routingComponents = [
     //Choice View Components
     ChoiceViewComponent,
+    RewardsHeaderComponent,
 
     //Wallet View Components
     WalletViewComponent,

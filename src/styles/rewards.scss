@@ -1,21 +1,14 @@
+/*!
+* account.scss 12/08/2016 //(C) IHG. All rights reserved.
+* Responsive Account Management (RAM).
+*/
 @import 'node_modules/ihg-brand-styles/global-brand-code'; //NPM Common Components >> ihg-brand-styles >> global-brand-code.scss
 @import "base/specs/6c-variables";
 @import "base/vendor/bootstrap-sass";
-@import "base/mixins";
-@import "base/specs";
-@import "base/modules";
+@import "base/spacing";
 
-.rewards-container {
-  @import "base/vendor/bootstrap-sass";
-  @import "base/mixins";
-  @import "base/specs";
-  @import "base/modules";
-  // @import "../common/ui-slots/ui-slots";
-  @import "base/vendor/carousel/carousel";
-}
 
 body {
-  @import "base/vendor/bootstrap-sass";
   margin: 0;
 }
 
