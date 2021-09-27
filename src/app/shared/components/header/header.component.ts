@@ -18,11 +18,11 @@ export class HeaderComponent implements OnInit {
   } 
 
   clickAccount() {
-    this.subject.viewInfo.next("accountInformation");
+    this.subject.viewInfo.next("home");
   }
 
   clickWallet() {
-    this.subject.viewInfo.next("walletInformation");
+    this.subject.viewInfo.next("wallet");
   }
 
 
