@@ -11,14 +11,9 @@ import { ComponentHostDirective } from '../directives/component-host.directive';
 import { ReducersList } from './store/reducers/app.reducers';
 
 import { ChoiceEffects } from './store/effects/app.effects';
-import { HttpClientModule } from '@angular/common/http';;
+import { HttpClientModule } from '@angular/common/http';
 import { SubjectServiceService } from './shared/services/subject-service.service';
 import { APP_BASE_HREF } from '@angular/common';
-
-
-
-
-
 
 @NgModule({
   declarations: [

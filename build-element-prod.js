@@ -11,6 +11,7 @@ const concat = require('concat');
   await fs.emptyDir('./dist/app');
   await fs.ensureDirSync('./dist/app/js');
   await fs.copy('./dist/build/', './dist/app/' );
+  await fs.copy('./src/styles', './dist/app/styles');
   await concat(files, './dist/app/js/rewards-component.js');
 })();
 

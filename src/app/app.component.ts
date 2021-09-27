@@ -14,11 +14,12 @@ import {
 import { WalletViewComponent } from './views/wallet-view/wallet-view.component';
 import { ChoiceViewComponent } from './views/choice-view/choice-view.component';
 import { SubjectServiceService } from './shared/services/subject-service.service';
+
+
 @Component({
   selector: 'custom-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent implements OnInit, AfterViewInit {
   @ViewChild('dynamicComponent', { read: ViewContainerRef }) myRef: any;

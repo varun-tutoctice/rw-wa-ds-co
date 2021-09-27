@@ -20,7 +20,7 @@ export class GenericServiceDAO {
     'X-IHG-SSO-TOKEN': '',
   };
 
-  private getCookie(name: string): void {
+  public getCookie(name: string): void {
     let cookie: any = {};
     cookie[name] = this.cookieService.get(name) as string;
     Object.assign(this.cookies, cookie);

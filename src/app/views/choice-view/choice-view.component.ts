@@ -1,7 +1,5 @@
 import { Store } from '@ngrx/store';
 import { take } from 'rxjs/operators';
-// import { getChoiceData } from '../store/actions/app.actions';
-// import { IAppState } from '../store/app.interface';
 import { Component, OnInit, Input } from '@angular/core';
 import { IAppState } from '@app/store/app.interface';
 import { getChoiceData } from '@app/store/actions/app.actions';
