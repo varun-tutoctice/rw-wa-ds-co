@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 //Choice View Components
 import { ChoiceViewComponent } from './views/choice-view/choice-view.component';
 import { RewardsHeaderComponent } from './views/choice-view/components/rewards-header/rewards-header.component';
+import { ChoiceCtaComponent } from './views/choice-view/components/choice-cta/choice-cta.component';
+
 //Wallet View Components
 import { WalletViewComponent } from './views/wallet-view/wallet-view.component';
 //Shared Components
@@ -33,7 +35,8 @@ export const routingComponents = [
     //Choice View Components
     ChoiceViewComponent,
     RewardsHeaderComponent,
-
+    ChoiceCtaComponent,
+    
     //Wallet View Components
     WalletViewComponent,
 
