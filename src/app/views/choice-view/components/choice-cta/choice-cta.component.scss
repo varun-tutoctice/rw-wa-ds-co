@@ -1,0 +1,45 @@
+@import "../../../../../styles/base/specs/6c-variables";
+@import "../../../../../styles/base/specs/typography";
+
+.background-cta {
+    background-color: #F0EEED;
+    // border-bottom: 2px solid linear-gradient(105.58deg, rgba(199, 178, 99, 0) 33.96%, #968237 100%), linear-gradient(285.58deg, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0) 47.4%), #C7B263;
+    border-bottom: 8px solid #C7B263;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+.cta-header {
+font-family: $graphik_regular_font_family;
+font-size: 3.2rem;
+color: #000000;
+}
+
+.choice-sub {
+    font-weight: 900; letter-spacing: .6rem;
+}
+
+.btn-primary {
+    background-color: #E8542C;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+@media screen and (min-device-width: 100px) and (max-device-width: 380px) {
+  .cta-header {
+    font-family: $graphik_regular_font_family;
+    font-size: 2.4rem;
+    color: #000000;
+    }
+
+  }
+
+  @media screen and (min-device-width: 380px) and (max-device-width: 1000px) {
+
+    .cta-header {
+        font-family: $graphik_regular_font_family;
+        font-size: 2.4rem;
+        color: #000000;
+        }
+
+  }

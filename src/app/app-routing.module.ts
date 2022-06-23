@@ -10,12 +10,13 @@ import { WalletViewComponent } from './views/wallet-view/wallet-view.component';
 //Shared Components
 import { HeaderComponent } from './shared/components/header/header.component';
 import { ChoiceDescriptionComponent } from './shared/components/choice-description/choice-description.component';
+import { ChoiceDetailComponent } from './views/choice-view/components/choice-detail/choice-detail.component';
 
 /*Internal Routes are imported and declared here*/
 const routes: Routes = [
     //Choice View Routes
     { path: 'choiceView', component: ChoiceViewComponent },
-    { path: 'choice/:id', component: ChoiceDescriptionComponent },
+    { path: 'choice', component: ChoiceDetailComponent },
     //Waller View Routes
     { path: 'walletView', component: WalletViewComponent },
 ];
@@ -36,6 +37,7 @@ export const routingComponents = [
     ChoiceViewComponent,
     RewardsHeaderComponent,
     ChoiceCtaComponent,
+    ChoiceDetailComponent,
     
     //Wallet View Components
     WalletViewComponent,
@@ -43,4 +45,5 @@ export const routingComponents = [
     //Shared Components
     HeaderComponent,
     ChoiceDescriptionComponent,
+
   ]

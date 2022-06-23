@@ -41,7 +41,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     /* Comment Out When Building*/
-   // this.view = 'choice'
+    this.view = 'choice'
     this.generalService.updateAppConfigData(this.data);
     this.subject.viewInfo.subscribe((data) => {
       this.viewInfo.emit(data);

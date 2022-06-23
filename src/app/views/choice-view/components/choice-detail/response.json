@@ -1,0 +1,661 @@
+{
+    "benefits": [
+        {
+            "benefitId": "0ji11000000006OAAQ",
+            "benefitName": "20 Night Milestone",
+            "benefitType": "Milestone",
+            "milestoneUnits": "Night",
+            "milestoneValue": 20.0,
+            "choiceSelectionCount": 3.0,
+            "choiceIssuedDate": "2021-09-28",
+            "choiceExpirationDate": "2021-12-27T00:00:00.000+0000",
+            "autoSelectionVoucherDefinitionIds": [
+                {
+                    "voucherDefinitionId": "2Xa110000000059CAA",
+                    "choiceVoucherName": "Bonus 5K Point Reward"
+                }
+            ],
+            "categoryDetails": [
+                {
+                    "categoryId": "UPG-STAY",
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa110000000050CAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "http://www.voucherimageurl.com",
+                            "voucherIcon": "www.test.scene7url.com",
+                            "choiceVoucherName": "F&B Credit",
+                            "shortDescription": "Splurge in the hotel food outlets and use your credits on your folio.",
+                            "longDescription": "IHG® Rewards members may redeem a Food & Beverage Credit to apply against applicable charges at participating IHG® Hotels & Resorts. Credit redemptions may only be made during a personal stay, after log-in at IHG.com/rewards with a valid IHG Rewards membership, and must be made before check-out.  The credit applied will be based on the local currency of the hotel. Food & Beverage credits may only be used for spend that is billed to the Member’s guest room. These charges vary by property, but gen",
+                            "expirationDescription": "Credit is valid for 365 days from the date of credit issue.",
+                            "restrictions": "Credits cannot be used when staying as part of group, package tours, or conventions that have been charged to and/or paid for by a third party. Additionally, the credit may only be applied to the Member’s guest room and may not be used for multiple rooms,",
+                            "displayOrderNumber": 2.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "LOY-FNBK-0001",
+                    "categoryName": "Free Nights & Booking Rewards",
+                    "categoryIcon": "freenight.icon.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa110000000059CAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": null,
+                            "voucherIcon": "www.scene7urltest.com",
+                            "choiceVoucherName": "Bonus 5K Point Reward",
+                            "shortDescription": "Receive 5K worth of points for being a loyal member.",
+                            "longDescription": "This voucher is auto-redeemed for you as the member when it is awarded to you.  You do not have to take any further action.  You can check-out your Account details to see your point deposit.",
+                            "expirationDescription": "The reward will expire within 24 months of issue.",
+                            "restrictions": "This voucher is not redeemable for cash nor can be it be converted to cash value in any way.",
+                            "displayOrderNumber": 1.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": null,
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000004uCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": null,
+                            "voucherIcon": "www.scene7URL.test.com",
+                            "choiceVoucherName": "One Complimentary Room Upgrade",
+                            "shortDescription": "A chance to upgrade your room one time on an upcoming stay.",
+                            "longDescription": "You are invited to relax in an upgraded room for one of your upcoming stays. Must be used on a future stay booked at least 3 days in advance of your stay.  Book your reservation and then contact the call center to complete your upgrade.  Visit us at https://www.ihgplc.com/en/contact-us/copy-of-guest-services",
+                            "expirationDescription": "Use within 1 year of award date",
+                            "restrictions": "Cannot be transferred. Not redeemable for cash. Must be confirmed 3 days prior to check-in. Cannot be used if you are not willing to have fun.  We guarantee you'll have a comfy bed to relax in during your stay. This is to show the max number of characters",
+                            "displayOrderNumber": 3.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "benefitId": "0ji11000000006nAAA",
+            "benefitName": "70 Night Milestone",
+            "benefitType": "Milestone",
+            "milestoneUnits": "Night",
+            "milestoneValue": 70.0,
+            "choiceSelectionCount": 4.0,
+            "choiceIssuedDate": "2021-09-28",
+            "choiceExpirationDate": "2022-01-26T00:00:00.000+0000",
+            "autoSelectionVoucherDefinitionIds": [
+                {
+                    "voucherDefinitionId": "2Xa11000000004zCAA",
+                    "choiceVoucherName": "11th Heaven - Get 11 of these vouchers because you are a nice member."
+                }
+            ],
+            "categoryDetails": [
+                {
+                    "categoryId": "LOY-FNBK-0001",
+                    "categoryName": "Free Nights & Booking Rewards",
+                    "categoryIcon": "freenight.icon.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000004zCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "www.imageurl.com",
+                            "voucherIcon": "www.scene7urltest.com",
+                            "choiceVoucherName": "11th Heaven - Get 11 of these vouchers because you are a nice member.",
+                            "shortDescription": "Receive points for being a loyal member.",
+                            "longDescription": "This voucher is auto-redeemed for you as the member when it is awarded to you.  You do not have to take any further action.  You can check-out your Account details to see your point deposit.",
+                            "expirationDescription": "The reward will expire within 24 months of issue.",
+                            "restrictions": "This voucher is not redeemable for cash nor can be it be converted to cash value in any way.",
+                            "displayOrderNumber": 1.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "UPG-STAY",
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa110000000050CAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "http://www.voucherimageurl.com",
+                            "voucherIcon": "www.test.scene7url.com",
+                            "choiceVoucherName": "Enjoy Five Food & Beverage Rewards",
+                            "shortDescription": "Splurge in the hotel food outlets and use your credits on your folio.",
+                            "longDescription": "IHG® Rewards members may redeem a Food & Beverage Credit to apply against applicable charges at participating IHG® Hotels & Resorts. Credit redemptions may only be made during a personal stay, after log-in at IHG.com/rewards with a valid IHG Rewards membership, and must be made before check-out.  The credit applied will be based on the local currency of the hotel. Food & Beverage credits may only be used for spend that is billed to the Member’s guest room. These charges vary by property, but gen",
+                            "expirationDescription": "Credit is valid for 365 days from the date of credit issue.",
+                            "restrictions": "Credits cannot be used when staying as part of group, package tours, or conventions that have been charged to and/or paid for by a third party. Additionally, the credit may only be applied to the Member’s guest room and may not be used for multiple rooms,",
+                            "displayOrderNumber": 2.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": null,
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000005nCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": null,
+                            "voucherIcon": "www.scene7url.test.com",
+                            "choiceVoucherName": "Free Lounge Access for 6 months",
+                            "shortDescription": "Enjoy the lounge at certain IHG properties for the year.",
+                            "longDescription": "To use your Lounge Pass please present the reward in your wallet to the front desk at the hotel. They will provide you with information on how to access the Lounge for your enjoyment.  Not all IHG properties have a lounge so this benefit will only be available at properties with the amenity.  Please review the amenities available at the property before you arrive by visiting www.ihg.com.  This Lounge Pass is not worth any monetary value and cannot be traded for monetary value.",
+                            "expirationDescription": "Enjoy access for 6 months after award",
+                            "restrictions": "The lounge pass is available to the member only and is not a transferable reward benefit.  The member must be present for usage.  The member is allowed to bring a max of 2 guests to join the lounge experience.",
+                            "displayOrderNumber": 3.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": null,
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000004uCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": null,
+                            "voucherIcon": "www.scene7URL.test.com",
+                            "choiceVoucherName": "One Complimentary Room Upgrade",
+                            "shortDescription": "A chance to upgrade your room one time on an upcoming stay.",
+                            "longDescription": "You are invited to relax in an upgraded room for one of your upcoming stays. Must be used on a future stay booked at least 3 days in advance of your stay.  Book your reservation and then contact the call center to complete your upgrade.  Visit us at https://www.ihgplc.com/en/contact-us/copy-of-guest-services",
+                            "expirationDescription": "Use within 1 year of award date",
+                            "restrictions": "Cannot be transferred. Not redeemable for cash. Must be confirmed 3 days prior to check-in. Cannot be used if you are not willing to have fun.  We guarantee you'll have a comfy bed to relax in during your stay. This is to show the max number of characters",
+                            "displayOrderNumber": 4.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "benefitId": "0ji11000000006iAAA",
+            "benefitName": "60 Night Milestone",
+            "benefitType": "Milestone",
+            "milestoneUnits": "Night",
+            "milestoneValue": 60.0,
+            "choiceSelectionCount": 2.0,
+            "choiceIssuedDate": "2021-09-28",
+            "choiceExpirationDate": "2021-12-27T00:00:00.000+0000",
+            "autoSelectionVoucherDefinitionIds": [
+                {
+                    "voucherDefinitionId": "2Xa11000000004zCAA",
+                    "choiceVoucherName": "Bonus 10K Point Reward"
+                }
+            ],
+            "categoryDetails": [
+                {
+                    "categoryId": null,
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000005iCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": null,
+                            "voucherIcon": "www.test.scene7url.com",
+                            "choiceVoucherName": "Ten Food & Beverage Rewards",
+                            "shortDescription": "Splurge in the hotel food outlets and use your credits on your folio.",
+                            "longDescription": "IHG® Rewards members may redeem a Food & Beverage Credit to apply against applicable charges at participating IHG® Hotels & Resorts. Credit redemptions may only be made during a personal stay, after log-in at IHG.com/rewards with a valid IHG Rewards membership, and must be made before check-out.  The credit applied will be based on the local currency of the hotel. Food & Beverage credits may only be used for spend that is billed to the Member’s guest room. These charges vary by property, but gen",
+                            "expirationDescription": "Credit is valid for 365 days from the date of credit issue.",
+                            "restrictions": "Credits cannot be used when staying as part of group, package tours, or conventions that have been charged to and/or paid for by a third party. Additionally, the credit may only be applied to the Member’s guest room and may not be used for multiple rooms,",
+                            "displayOrderNumber": 2.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "LOY-FNBK-0001",
+                    "categoryName": "Free Nights & Booking Rewards",
+                    "categoryIcon": "freenight.icon.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000004zCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "www.imageurl.com",
+                            "voucherIcon": "www.scene7urltest.com",
+                            "choiceVoucherName": "Bonus 10K Point Reward",
+                            "shortDescription": "Receive points for being a loyal member.",
+                            "longDescription": "This voucher is auto-redeemed for you as the member when it is awarded to you.  You do not have to take any further action.  You can check-out your Account details to see your point deposit.",
+                            "expirationDescription": "The reward will expire within 24 months of issue.",
+                            "restrictions": "This voucher is not redeemable for cash nor can be it be converted to cash value in any way.",
+                            "displayOrderNumber": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "benefitId": "0ji11000000006sAAA",
+            "benefitName": "80 Night Milestone",
+            "benefitType": "Milestone",
+            "milestoneUnits": "Night",
+            "milestoneValue": 80.0,
+            "choiceSelectionCount": 2.0,
+            "choiceIssuedDate": "2021-09-28",
+            "choiceExpirationDate": "2021-12-27T00:00:00.000+0000",
+            "autoSelectionVoucherDefinitionIds": [
+                {
+                    "voucherDefinitionId": "2Xa11000000004zCAA",
+                    "choiceVoucherName": "Bonus 10K Point Reward"
+                }
+            ],
+            "categoryDetails": [
+                {
+                    "categoryId": null,
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000005iCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": null,
+                            "voucherIcon": "www.test.scene7url.com",
+                            "choiceVoucherName": "Ten Food & Beverage Rewards",
+                            "shortDescription": "Splurge in the hotel food outlets and use your credits on your folio.",
+                            "longDescription": "IHG® Rewards members may redeem a Food & Beverage Credit to apply against applicable charges at participating IHG® Hotels & Resorts. Credit redemptions may only be made during a personal stay, after log-in at IHG.com/rewards with a valid IHG Rewards membership, and must be made before check-out.  The credit applied will be based on the local currency of the hotel. Food & Beverage credits may only be used for spend that is billed to the Member’s guest room. These charges vary by property, but gen",
+                            "expirationDescription": "Credit is valid for 365 days from the date of credit issue.",
+                            "restrictions": "Credits cannot be used when staying as part of group, package tours, or conventions that have been charged to and/or paid for by a third party. Additionally, the credit may only be applied to the Member’s guest room and may not be used for multiple rooms,",
+                            "displayOrderNumber": 2.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "LOY-FNBK-0001",
+                    "categoryName": "Free Nights & Booking Rewards",
+                    "categoryIcon": "freenight.icon.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000004zCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "www.imageurl.com",
+                            "voucherIcon": "www.scene7urltest.com",
+                            "choiceVoucherName": "Bonus 10K Point Reward",
+                            "shortDescription": "Receive points for being a loyal member.",
+                            "longDescription": "This voucher is auto-redeemed for you as the member when it is awarded to you.  You do not have to take any further action.  You can check-out your Account details to see your point deposit.",
+                            "expirationDescription": "The reward will expire within 24 months of issue.",
+                            "restrictions": "This voucher is not redeemable for cash nor can be it be converted to cash value in any way.",
+                            "displayOrderNumber": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "benefitId": "0ji110000000072AAA",
+            "benefitName": "100 Night Milestone",
+            "benefitType": "Milestone",
+            "milestoneUnits": "Night",
+            "milestoneValue": 100.0,
+            "choiceSelectionCount": 2.0,
+            "choiceIssuedDate": "2021-09-28",
+            "choiceExpirationDate": "2021-12-27T00:00:00.000+0000",
+            "autoSelectionVoucherDefinitionIds": [
+                {
+                    "voucherDefinitionId": "2Xa11000000004zCAA",
+                    "choiceVoucherName": "Bonus 10K Point Reward"
+                }
+            ],
+            "categoryDetails": [
+                {
+                    "categoryId": "UPG-STAY",
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa110000000050CAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "http://www.voucherimageurl.com",
+                            "voucherIcon": "www.test.scene7url.com",
+                            "choiceVoucherName": "Five Food & Beverage Credits",
+                            "shortDescription": "Splurge in the hotel food outlets and use your credits on your folio.",
+                            "longDescription": "IHG® Rewards members may redeem a Food & Beverage Credit to apply against applicable charges at participating IHG® Hotels & Resorts. Credit redemptions may only be made during a personal stay, after log-in at IHG.com/rewards with a valid IHG Rewards membership, and must be made before check-out.  The credit applied will be based on the local currency of the hotel. Food & Beverage credits may only be used for spend that is billed to the Member’s guest room. These charges vary by property, but gen",
+                            "expirationDescription": "Credit is valid for 365 days from the date of credit issue.",
+                            "restrictions": "Credits cannot be used when staying as part of group, package tours, or conventions that have been charged to and/or paid for by a third party. Additionally, the credit may only be applied to the Member’s guest room and may not be used for multiple rooms,",
+                            "displayOrderNumber": 2.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "LOY-FNBK-0001",
+                    "categoryName": "Free Nights & Booking Rewards",
+                    "categoryIcon": "freenight.icon.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000004zCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "www.imageurl.com",
+                            "voucherIcon": "www.scene7urltest.com",
+                            "choiceVoucherName": "Bonus 10K Point Reward",
+                            "shortDescription": "Receive points for being a loyal member.",
+                            "longDescription": "This voucher is auto-redeemed for you as the member when it is awarded to you.  You do not have to take any further action.  You can check-out your Account details to see your point deposit.",
+                            "expirationDescription": "The reward will expire within 24 months of issue.",
+                            "restrictions": "This voucher is not redeemable for cash nor can be it be converted to cash value in any way.",
+                            "displayOrderNumber": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "benefitId": "0ji11000000006xAAA",
+            "benefitName": "90 Night Milestone",
+            "benefitType": "Milestone",
+            "milestoneUnits": "Night",
+            "milestoneValue": 90.0,
+            "choiceSelectionCount": 2.0,
+            "choiceIssuedDate": "2021-09-28",
+            "choiceExpirationDate": "2021-12-27T00:00:00.000+0000",
+            "autoSelectionVoucherDefinitionIds": [],
+            "categoryDetails": [
+                {
+                    "categoryId": "LOY-FNBK-0001",
+                    "categoryName": "Free Nights & Booking Rewards",
+                    "categoryIcon": "freenight.icon.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000004zCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "www.imageurl.com",
+                            "voucherIcon": "www.scene7urltest.com",
+                            "choiceVoucherName": "Bonus 10K Point Reward",
+                            "shortDescription": "Receive points for being a loyal member.",
+                            "longDescription": "This voucher is auto-redeemed for you as the member when it is awarded to you.  You do not have to take any further action.  You can check-out your Account details to see your point deposit.",
+                            "expirationDescription": "The reward will expire within 24 months of issue.",
+                            "restrictions": "This voucher is not redeemable for cash nor can be it be converted to cash value in any way.",
+                            "displayOrderNumber": 1.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": null,
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000005iCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": null,
+                            "voucherIcon": "www.test.scene7url.com",
+                            "choiceVoucherName": "Ten Food & Beverage Rewards",
+                            "shortDescription": "Splurge in the hotel food outlets and use your credits on your folio.",
+                            "longDescription": "IHG® Rewards members may redeem a Food & Beverage Credit to apply against applicable charges at participating IHG® Hotels & Resorts. Credit redemptions may only be made during a personal stay, after log-in at IHG.com/rewards with a valid IHG Rewards membership, and must be made before check-out.  The credit applied will be based on the local currency of the hotel. Food & Beverage credits may only be used for spend that is billed to the Member’s guest room. These charges vary by property, but gen",
+                            "expirationDescription": "Credit is valid for 365 days from the date of credit issue.",
+                            "restrictions": "Credits cannot be used when staying as part of group, package tours, or conventions that have been charged to and/or paid for by a third party. Additionally, the credit may only be applied to the Member’s guest room and may not be used for multiple rooms,",
+                            "displayOrderNumber": 2.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "benefitId": "0ji11000000006YAAQ",
+            "benefitName": "40 Night Milestone",
+            "benefitType": "Milestone",
+            "milestoneUnits": "Night",
+            "milestoneValue": 40.0,
+            "choiceSelectionCount": 4.0,
+            "choiceIssuedDate": "2021-09-28",
+            "choiceExpirationDate": "2021-12-27T00:00:00.000+0000",
+            "autoSelectionVoucherDefinitionIds": [
+                {
+                    "voucherDefinitionId": "2Xa11000000004zCAA",
+                    "choiceVoucherName": "Bonus 10K Point Reward"
+                }
+            ],
+            "categoryDetails": [
+                {
+                    "categoryId": null,
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000004uCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": null,
+                            "voucherIcon": "www.scene7URL.test.com",
+                            "choiceVoucherName": "One Complimentary Room Upgrade",
+                            "shortDescription": "A chance to upgrade your room one time on an upcoming stay.",
+                            "longDescription": "You are invited to relax in an upgraded room for one of your upcoming stays. Must be used on a future stay booked at least 3 days in advance of your stay.  Book your reservation and then contact the call center to complete your upgrade.  Visit us at https://www.ihgplc.com/en/contact-us/copy-of-guest-services",
+                            "expirationDescription": "Use within 1 year of award date",
+                            "restrictions": "Cannot be transferred. Not redeemable for cash. Must be confirmed 3 days prior to check-in. Cannot be used if you are not willing to have fun.  We guarantee you'll have a comfy bed to relax in during your stay. This is to show the max number of characters",
+                            "displayOrderNumber": 3.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "UPG-STAY",
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa110000000050CAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "http://www.voucherimageurl.com",
+                            "voucherIcon": "www.test.scene7url.com",
+                            "choiceVoucherName": "Bonus 5K Point Reward",
+                            "shortDescription": "Splurge in the hotel food outlets and use your credits on your folio.",
+                            "longDescription": "IHG® Rewards members may redeem a Food & Beverage Credit to apply against applicable charges at participating IHG® Hotels & Resorts. Credit redemptions may only be made during a personal stay, after log-in at IHG.com/rewards with a valid IHG Rewards membership, and must be made before check-out.  The credit applied will be based on the local currency of the hotel. Food & Beverage credits may only be used for spend that is billed to the Member’s guest room. These charges vary by property, but gen",
+                            "expirationDescription": "Credit is valid for 365 days from the date of credit issue.",
+                            "restrictions": "Credits cannot be used when staying as part of group, package tours, or conventions that have been charged to and/or paid for by a third party. Additionally, the credit may only be applied to the Member’s guest room and may not be used for multiple rooms,",
+                            "displayOrderNumber": 2.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "LOY-FNBK-0001",
+                    "categoryName": "Free Nights & Booking Rewards",
+                    "categoryIcon": "freenight.icon.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000004zCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "www.imageurl.com",
+                            "voucherIcon": "www.scene7urltest.com",
+                            "choiceVoucherName": "Bonus 10K Point Reward",
+                            "shortDescription": "Receive points for being a loyal member.",
+                            "longDescription": "This voucher is auto-redeemed for you as the member when it is awarded to you.  You do not have to take any further action.  You can check-out your Account details to see your point deposit.",
+                            "expirationDescription": "The reward will expire within 24 months of issue.",
+                            "restrictions": "This voucher is not redeemable for cash nor can be it be converted to cash value in any way.",
+                            "displayOrderNumber": 1.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": null,
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000005nCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": null,
+                            "voucherIcon": "www.scene7url.test.com",
+                            "choiceVoucherName": "Free Lounge Access for 6 Months",
+                            "shortDescription": "Enjoy the lounge at certain IHG properties for the year.",
+                            "longDescription": "To use your Lounge Pass please present the reward in your wallet to the front desk at the hotel. They will provide you with information on how to access the Lounge for your enjoyment.  Not all IHG properties have a lounge so this benefit will only be available at properties with the amenity.  Please review the amenities available at the property before you arrive by visiting www.ihg.com.  This Lounge Pass is not worth any monetary value and cannot be traded for monetary value.",
+                            "expirationDescription": "Enjoy access for 6 months after award",
+                            "restrictions": "The lounge pass is available to the member only and is not a transferable reward benefit.  The member must be present for usage.  The member is allowed to bring a max of 2 guests to join the lounge experience.",
+                            "displayOrderNumber": 4.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "benefitId": "0ji11000000006dAAA",
+            "benefitName": "50 Night Milestone",
+            "benefitType": "Milestone",
+            "milestoneUnits": "Night",
+            "milestoneValue": 50.0,
+            "choiceSelectionCount": 2.0,
+            "choiceIssuedDate": "2021-09-28",
+            "choiceExpirationDate": "2021-12-27T00:00:00.000+0000",
+            "autoSelectionVoucherDefinitionIds": [
+                {
+                    "voucherDefinitionId": "2Xa11000000004zCAA",
+                    "choiceVoucherName": "Bonus 10K Point Reward"
+                }
+            ],
+            "categoryDetails": [
+                {
+                    "categoryId": "LOY-FNBK-0001",
+                    "categoryName": "Free Nights & Booking Rewards",
+                    "categoryIcon": "freenight.icon.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000004zCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "www.imageurl.com",
+                            "voucherIcon": "www.scene7urltest.com",
+                            "choiceVoucherName": "Bonus 10K Point Reward",
+                            "shortDescription": "Receive points for being a loyal member.",
+                            "longDescription": "This voucher is auto-redeemed for you as the member when it is awarded to you.  You do not have to take any further action.  You can check-out your Account details to see your point deposit.",
+                            "expirationDescription": "The reward will expire within 24 months of issue.",
+                            "restrictions": "This voucher is not redeemable for cash nor can be it be converted to cash value in any way.",
+                            "displayOrderNumber": 1.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "UPG-STAY",
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa110000000050CAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "http://www.voucherimageurl.com",
+                            "voucherIcon": "www.test.scene7url.com",
+                            "choiceVoucherName": "Bonus 5K Point Reward",
+                            "shortDescription": "Splurge in the hotel food outlets and use your credits on your folio.",
+                            "longDescription": "IHG® Rewards members may redeem a Food & Beverage Credit to apply against applicable charges at participating IHG® Hotels & Resorts. Credit redemptions may only be made during a personal stay, after log-in at IHG.com/rewards with a valid IHG Rewards membership, and must be made before check-out.  The credit applied will be based on the local currency of the hotel. Food & Beverage credits may only be used for spend that is billed to the Member’s guest room. These charges vary by property, but gen",
+                            "expirationDescription": "Credit is valid for 365 days from the date of credit issue.",
+                            "restrictions": "Credits cannot be used when staying as part of group, package tours, or conventions that have been charged to and/or paid for by a third party. Additionally, the credit may only be applied to the Member’s guest room and may not be used for multiple rooms,",
+                            "displayOrderNumber": 2.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "benefitId": null,
+            "benefitName": null,
+            "benefitType": null,
+            "milestoneUnits": null,
+            "milestoneValue": null,
+            "choiceSelectionCount": 4.0,
+            "choiceIssuedDate": null,
+            "choiceExpirationDate": null,
+            "autoSelectionVoucherDefinitionIds": [
+                {
+                    "voucherDefinitionId": "2Xa11000000004zCAA",
+                    "choiceVoucherName": null
+                }
+            ],
+            "categoryDetails": [
+                {
+                    "categoryId": "UPG-STAY",
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa110000000050CAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "http://www.voucherimageurl.com",
+                            "voucherIcon": "www.test.scene7url.com",
+                            "choiceVoucherName": null,
+                            "shortDescription": "Splurge in the hotel food outlets and use your credits on your folio.",
+                            "longDescription": "IHG® Rewards members may redeem a Food & Beverage Credit to apply against applicable charges at participating IHG® Hotels & Resorts. Credit redemptions may only be made during a personal stay, after log-in at IHG.com/rewards with a valid IHG Rewards membership, and must be made before check-out.  The credit applied will be based on the local currency of the hotel. Food & Beverage credits may only be used for spend that is billed to the Member’s guest room. These charges vary by property, but gen",
+                            "expirationDescription": "Credit is valid for 365 days from the date of credit issue.",
+                            "restrictions": "Credits cannot be used when staying as part of group, package tours, or conventions that have been charged to and/or paid for by a third party. Additionally, the credit may only be applied to the Member’s guest room and may not be used for multiple rooms,",
+                            "displayOrderNumber": 2.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": "LOY-FNBK-0001",
+                    "categoryName": "Free Nights & Booking Rewards",
+                    "categoryIcon": "freenight.icon.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000004zCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": "www.imageurl.com",
+                            "voucherIcon": "www.scene7urltest.com",
+                            "choiceVoucherName": null,
+                            "shortDescription": "Receive points for being a loyal member.",
+                            "longDescription": "This voucher is auto-redeemed for you as the member when it is awarded to you.  You do not have to take any further action.  You can check-out your Account details to see your point deposit.",
+                            "expirationDescription": "The reward will expire within 24 months of issue.",
+                            "restrictions": "This voucher is not redeemable for cash nor can be it be converted to cash value in any way.",
+                            "displayOrderNumber": 1.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": null,
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000005nCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": null,
+                            "voucherIcon": "www.scene7url.test.com",
+                            "choiceVoucherName": null,
+                            "shortDescription": "Enjoy the lounge at certain IHG properties for the year.",
+                            "longDescription": "To use your Lounge Pass please present the reward in your wallet to the front desk at the hotel. They will provide you with information on how to access the Lounge for your enjoyment.  Not all IHG properties have a lounge so this benefit will only be available at properties with the amenity.  Please review the amenities available at the property before you arrive by visiting www.ihg.com.  This Lounge Pass is not worth any monetary value and cannot be traded for monetary value.",
+                            "expirationDescription": "Enjoy access for 6 months after award",
+                            "restrictions": "The lounge pass is available to the member only and is not a transferable reward benefit.  The member must be present for usage.  The member is allowed to bring a max of 2 guests to join the lounge experience.",
+                            "displayOrderNumber": 3.0
+                        }
+                    ]
+                },
+                {
+                    "categoryId": null,
+                    "categoryName": "Upgrades & Stay Rewards",
+                    "categoryIcon": "www.test.com",
+                    "categoryChoiceCount": null,
+                    "voucherDetails": [
+                        {
+                            "voucherDefinitionId": "2Xa11000000004uCAA",
+                            "voucherMaxCount": null,
+                            "voucherImage": null,
+                            "voucherIcon": "www.scene7URL.test.com",
+                            "choiceVoucherName": null,
+                            "shortDescription": "A chance to upgrade your room one time on an upcoming stay.",
+                            "longDescription": "You are invited to relax in an upgraded room for one of your upcoming stays. Must be used on a future stay booked at least 3 days in advance of your stay.  Book your reservation and then contact the call center to complete your upgrade.  Visit us at https://www.ihgplc.com/en/contact-us/copy-of-guest-services",
+                            "expirationDescription": "Use within 1 year of award date",
+                            "restrictions": "Cannot be transferred. Not redeemable for cash. Must be confirmed 3 days prior to check-in. Cannot be used if you are not willing to have fun.  We guarantee you'll have a comfy bed to relax in during your stay. This is to show the max number of characters",
+                            "displayOrderNumber": 4.0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
